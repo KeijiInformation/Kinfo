@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/* ファーストビューここから */
+.first-view.fixed-page {
+    background-image: url("../img/profile/first-view.jpg");
+    background-size: contain;
+    text-shadow: 0 0 2px white;
+}
+/* ファーストビューここまで */
+
+
+
+
+
+
+/* プロフィール全体ここから */
+.profile-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-box {
+    padding: 30px;
+}
+
+.profile-box h2 {
+    text-align: center;
+}
+
+.profile-box h2::after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: black;
+    border-radius: 20%;
+}
+
+.profile-box:nth-child(2n) {
+    background-color: rgb(234, 234, 234);
+}
+/* プロフィール全体ここまで */
+
+
+
+
+
+
+/* 基本情報ここから */
+/* 基本情報ここまで */
+
+
+
+
+
+
+/* プログラミング関係ここから */
+.about-programming .profile-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.skill-chart-area {
+    width: 49%;
+}
+
+.icon-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-area li {
+    position: relative;
+    width: 90px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 1px 1px 2px black;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.icon-area li:hover {
+    box-shadow: 2px 2px 3px black;
+    cursor: pointer;
+}
+
+.icon-area li.active {
+    background-color: rgb(200, 200, 200);
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+.icon-area img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+}
+
+.icon-area .Python img {
+    top: 5px;
+}
+
+.icon-area .HTML･CSS img{
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    transform: none;
+    width: 45px;
+    height: 45px;
+}
+
+.icon-area .HTML･CSS img:nth-child(2) {
+    right: 2px;
+    left: auto;
+}
+
+.icon-area span {
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    width: calc(100% - 4px);
+    text-align: center;
+    font-size: 2px;
+    font-weight: bold;
+}
+
+.language-detail {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 49%;
+    display: block;
+}
+
+.language-detail-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    height: 100%;
+    text-align: center;
+    border-left: 1.5px solid rgb(200, 200, 200);
+    border-right: 1.5px solid rgb(200, 200, 200);
+    background-color: rgba(255, 255, 255, 0.5);
+    clip-path: inset(0 100%);
+    transition: all 0.4s ease-in-out;
+}
+
+.language-detail-content.active {
+    clip-path: inset(0 0);
+}
+
+.language-detail-content h1 {
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+}
+
+.about-programming-description {
+    margin-top: 30px;
+}
+
+.about-programming-description p {
+    position: relative;
+    display: block;
+    left: 90px;
+    line-height: 30px;
+    margin-top: 15px;
+    color: rgb(82, 82, 82);
+    font-family: serif;
+}
+
+.about-programming-description p::before {
+    content: attr(data-level);
+    position: absolute;
+    top: 0;
+    left: -90px;
+    display: block;
+    font-weight: bold;
+}
+/* プログラミング関係ここまで */
+
+
+
+
+
+
+/* その他ここから */
+/* その他ここまで */
+
+
+
+
+
+
+/* レスポンシブここから(801-900) */
+@media (max-width: 900px) {
+
+    .profile-detail {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .skill-chart-area {
+        width: 60%;
+        height: 300px;
+        display: flex;
+    }
+
+    .icon-area {
+        position: relative;
+        top: 50%;
+        margin-left: 20px;
+        flex-direction: column;
+        gap: 8px;
+        height: 300px;
+        justify-content: center;
+    }
+
+    .icon-area li {
+        width: 80px;
+        height: 70px;
+    }
+
+    .icon-area img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-area .HTML･CSS img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .language-detail {
+        transform: translateY(-50px);
+        width: 60%;
+        height: 280px;
+    }
+}
+/* レスポンシブここまで(801-900) */

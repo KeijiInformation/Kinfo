@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* ヘッダーここから */
+.header-inner {
+    /* 配置 */
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* サイズ */
+    max-width: 1200px;
+    height: 90px;
+    /* デザイン */
+    background-color: white;
+    /* レイアウト */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-box {
+    /* サイズ */
+    width: 125px;
+    /* レイアウト */
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.site-menu ul {
+    /* レイアウト */
+    display: flex;
+}
+
+.site-menu li {
+    position: relative;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.site-menu li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: 2px;
+    background-color: black;
+    clip-path: inset(0 100%);
+    transition: all 0.3s;
+}
+
+.site-menu .li-hover::after {
+    clip-path: inset(0 0);
+}
+
+.site-menu li:nth-child(1) {
+    margin-left: 0;
+}
+/* ヘッダーここまで */
+
+
+
+
+
+
+/* メインここから */
+main {
+    padding-top: 90px;
+}
+
+.first-view.fixed-page {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.first-view.fixed-page h1 {
+    font-family: serif;
+    text-align: center;
+}
+/* メインここまで */
+
+
+
+
+
+
+/* フッターここから */
+footer {
+    margin-top: 50px;
+    padding: 30px 50px 20px 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .site-menu li::after {
+    background-color: white;
+}
+
+.footer-logo {
+    margin: 40px 0;
+    width: 200px;
+}
+/* フッターここまで */

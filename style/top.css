@@ -1,0 +1,308 @@
+/* 共通スタイル */
+/* 全体 */
+* { 
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+/* 項目の1まとまり */
+.information-box{
+    display: inline-block;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+/* 項目のタイトル */
+.information-box-title{
+    border-bottom: solid 1px white;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-family: serif;
+}
+/* 項目の中身 */
+.information-box-content{
+    /* margin: 60px auto; */
+    width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.information-box-content.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* 項目の中身(左) */
+.information-box-content-left{
+    display: inline-block;
+    width: 46%;
+    height: fit-content;
+    text-align: left;
+    margin: 0 .65%;
+    padding: 0 1%;
+}
+/* 項目の中身(右) */
+.information-box-content-right{
+    display: inline-block;
+    width: 46%;
+    height: fit-content;
+    text-align: left;
+    margin: 0 .75%;
+    padding: 0 1%;
+}
+/* 縁取り文字 */
+.text-border{
+    text-shadow:
+    1px 1px 0.3px white, -1px -1px 0.3px white,
+    -1px 1px 0.3px white,  1px -1px 0.3px white,
+    1px 0px 0.3px white, -1px  0px 0.3px white,
+    0px 1px 0.3px white,  0px -1px 0.3px white;
+}
+.text-border-small{
+    text-shadow:
+           0.1px 0.1px 0px white, -0.1px -0.1px 0px white,
+          -0.1px 0.1px 0px white,  0.1px -0.1px 0px white,
+           0.1px 0px 0px white, -0.1px  0px 0px white,
+           0px 0.1px 0px white,  0px -0.1px 0px white;
+}
+
+/* 文章全般 */
+.detail-context-black{
+    width: 400px;
+    text-align: left;
+    color: black;
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.detail-context-white{
+    width: 400px;
+    text-align: left;
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.text-center{
+    text-align: center;
+}
+.small{
+    font-size: 15px;
+}
+.enphasize{
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: solid 2px white;
+}
+
+/* 背景加工 */
+.black-back{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.white-back{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* ロゴ */
+#logo{
+    
+}
+
+
+
+/* 上に戻るボタン */
+#btn-move-top{
+    position: fixed;
+    z-index: 10000;
+    bottom: 20px;
+    right: 20px;
+}
+.btn_up-top{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+}
+
+
+
+/* ハンバーガーメニュー */
+/* メニュー内容 */
+#menu-content{
+    position: fixed;
+    background-color: rgba(100, 100, 100, 0.4);
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    width: 300px;
+    padding-top: 59px;
+    padding-bottom: 5px;
+}
+.off{
+    transform: translateX(350px);
+    transition: 0.5s;
+}
+.on{
+    transform: translateX(0px);
+    transition: 0.5s;
+}
+.menu-content-li{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    border-top: solid 1.5px black;
+    margin-top: 5px;
+    line-height: 35px;
+    font-size: 15px;
+    font-family: serif;
+    font-weight: bold;
+    transition: .3s;
+}
+/* メニューアイコン */
+#hamburger-icon{
+    z-index: 100000;
+    background-color: rgba(0, 0, 255, 0.6);
+    width: 49px;
+    height: 49px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+.icon-line{
+    display: block;
+    background-color: rgba(0, 0, 0, 1);
+    width: 40px;
+    height: 7px;
+    position: absolute;
+    left: 5px;
+}
+#icon-line1{
+    top: 7px;
+}
+.icon-line1-active{
+    transform-origin: 50% 50%;
+    transform: translateY(14px) rotate(45deg);
+}
+#icon-line2{
+    top: 21px;
+}
+.icon-line2-active{
+    opacity: 0;
+    left: 5px;
+}
+#icon-line3{
+    bottom: 7px;
+}
+.icon-line3-active{
+    transform-origin: 50% 50%;
+    transform: translateY(-14px) rotate(-45deg);
+}
+/* ホバー時の背景変化 */
+.menu-content-li:before{
+    background-color: rgba(255, 255, 255, 1);
+    z-index: -1;
+    position: absolute;
+    content: "";
+    height: calc(100% + 5px);
+    /* width: 0; */
+    transform: scale(0, 0);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+}
+.menu-content-li:hover:before{
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    /* width: 100%; */
+}
+.menu-content-li:hover{
+    color: rgba(100, 100, 100, 1);
+}
+
+
+
+/* トップ */
+#top{
+    background-image: url('../img/top/top_bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* トップのテキスト */
+#top-text{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 25vh;
+    height: fit-content;
+    font-family: serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#top-text-title{
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    font-size: 50px;
+    border-bottom: solid 2px white;
+}
+#top-text-comment{
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+
+
+/* プロフィール */
+#profile{
+    background-image: url('../img/top/profile_bg-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* コンセプト */
+#concept{
+    background-image: url('../img/top/concept_bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* 実績 */
+#works{
+    background-image: url('../img/top/works_bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* その他 */
+#other{
+
+}
+
+
+
+/* フッター */
+footer{
+    display: auto;
+}

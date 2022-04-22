@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+
+
+
+
+
+/* ファーストビューここから */
+.first-view {
+    height: calc(100vh - 90px);
+    background-image: url("../img/index/index-firstview.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.first-view-text {
+    color: white;
+    font-family: serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.first-view-text h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.first-view-text p {
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+}
+/* ファーストビューここから */
+
+
+
+
+
+
+/* 各セクションここから */
+.main-section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.section-title::after {
+    content: attr(data-section-title-en);
+    position: relative;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    font-weight: 10;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section-title::before {
+    content: "";
+    position: relative;
+    top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+    background-color: black;
+}
+
+.main-section-content {
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+}
+
+.main-section-content p {
+    text-align: left;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.main-section-content .center-line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: calc(100% - 30px);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-section-content img {
+    
+}
+
+.main-section-content.flex-reverse {
+    flex-flow: row-reverse;
+}
+
+.works {
+    background-color: #e8e8e8;
+    width: 100%;
+    padding: 20px 5%;
+}
+
+.works-list {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.works-list li {
+    flex-shrink: 0;
+    margin-left: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 0 black;
+}
+
+.works-list li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.works-list li .work-subtitle {
+    text-align: center;
+    width: 100%;
+    font-family: serif;
+}
+
+.works-list li .work-title {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    font-family: serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.works-list img {
+    margin-top: 20px;
+    width: 280px;
+    height: 157.5px;
+}
+
+.works-list p.short-description {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 64px;
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    font-family: serif;
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+}
+
+.contact {
+    background-color: #e8e8e8;
+    padding: 20px 5%;
+    width: 100%;
+}
+
+.contact-content {
+    flex-direction: column;
+}
+
+.icon-area {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-area a {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 30%;
+}
+
+.icon-area a:first-child {
+    margin-right: 50px;
+}
+
+.icon-area a::after {
+    content: attr(data-icon-name);
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.icon-instagram::after {
+    text-shadow: 0px 0px 5px rgb(67, 1, 60);
+}
+
+.icon-twitter::after {
+    text-shadow: 0px 0px 5px rgb(0, 30, 95);
+}
+
+.contact-content .link-button {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+/* 各セクションここまで */
