@@ -115,11 +115,19 @@
 .works-list {
     display: flex;
     overflow-x: scroll;
+    padding-left: calc(50% - 150px);
+}
+
+.works-list a {
+    margin-left: 50px;
+}
+
+.works-list a:first-child {
+    margin-left: 0;
 }
 
 .works-list li {
     flex-shrink: 0;
-    margin-left: 50px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -218,3 +226,109 @@
     margin-top: 40px;
 }
 /* 各セクションここまで */
+
+
+
+
+
+
+/* レスポンシブここから */
+@media (max-width: 800px) {
+
+    /* ファーストビューここから */
+    .first-view-text h1 {
+        font-size: 23px;
+    }
+
+    .first-view-text p {
+        font-size: 11px;
+    }
+    /* ファーストビューここまで */
+
+    /* 各セクションここから */
+    .section-title {
+        font-size: 20px;
+    }
+
+    .section-title::before {
+        top: 30px;
+        width: 50px;
+    }
+
+    .section-title::after {
+        font-size: 12px;
+    }
+
+    .main-section-content {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .main-section img {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .main-section-content p {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .main-section-content.flex-reverse {
+        flex-flow: column-reverse;
+    }
+
+    .center-line {
+        display: none;
+    }
+
+    .works-list {
+        flex-direction: row;
+        flex-flow: row;
+        padding-left: calc(50% - 105px);
+    }
+
+    .works-list a {
+        display: block;
+        margin-left: 22px;
+    }
+
+    .works-list li img {
+        width: 190px;
+        height: 106.88px;
+    }
+
+    .works-list li {
+        top: 0;
+        left: 0;
+        width: 210px;
+    }
+
+    .works-list li .work-title {
+        font-size: 18px;
+    }
+
+    .works-list p.short-description {
+        font-size: 10px;
+    }
+
+    .contact-content {
+        flex-flow: column;
+    }
+
+    .icon-area a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-area a::after {
+        font-size: 10px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        transform: scale(0.9);
+    }
+    /* 各セクションここまで */
+
+}
+/* レスポンシブここまで */
