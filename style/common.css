@@ -147,7 +147,7 @@ footer .site-menu li::after {
 
     .header-logo-box {
         width: 80px;
-        padding-top: 8px;
+        padding-top: 5px;
     }
 
     .site-menu {
@@ -219,7 +219,7 @@ footer .site-menu li::after {
     }
 
     main {
-        padding-top: 70px;
+        padding-top: 50px;
     }
 }
 /* レスポンシブここまで */
