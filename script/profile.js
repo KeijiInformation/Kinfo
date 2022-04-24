@@ -1,5 +1,24 @@
+// 背景画像サイズ計算ここから
+    function resizeBgImg() {
+        let profileBoxWidth = document.querySelector(".profile-box").clientWidth;
+        let profileBoxList = document.querySelectorAll(".profile-box:not(.about-programming)");
+        let bgImageHeight = profileBoxWidth * 2 / 3;
+        for (let profileBox of profileBoxList) {
+            profileBox.style.height = String(bgImageHeight) + "px";
+        }
+    }
+
+    window.addEventListener("load", resizeBgImg, false);
+    window.addEventListener("resize", resizeBgImg, false);
+// 背景画像サイズ計算ここまで
+
+
+
+
+
+
 // スキルチャートここから
-const skillChart = document.querySelector('#skill-chart');
+    const skillChart = document.querySelector('#skill-chart');
 
     // 引数設定ここから
     function makeChartOption(title) {
