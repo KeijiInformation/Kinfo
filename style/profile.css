@@ -131,7 +131,7 @@
 .about-programming-description {
     width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     margin-top: 30px;
 }

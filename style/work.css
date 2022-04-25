@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* ファーストビューここから */
+.first-view.fixed-page {
+    background-image: url("../img/works/first-view.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: black;
+    box-shadow: none;
+}
+
+.first-view-category-title {
+    text-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 1px 0 white, -1px 0 0 white, -1px -1px 0 white, 0 -1px 0 white, 1px -1px 0 white;
+}
+/* ファーストビューここまで */
+
+
+
+
+
+
+/* Works-contents-area全体ここから */
+    .works-contents-area ul {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+/* Works-contents-area全体ここから */
+
+
+
+
+
+
+/* work-itemここから */
+    .work-item {
+        width: 300px;
+        height: 350px;
+        /* background-color: #C4C4C4; */
+        padding: 7.2% 3.1% 4.8% 3.1%;
+        text-align: center;
+        font-size: 0.67rem;
+    }
+
+    .sub-title {
+        font-size: 2.5em;
+        color: rgba(0,0,0,0.55);
+    }
+
+    .title {
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    .work-item img {
+        margin-top: 4.8%;
+    }
+
+    .button-area {
+        position: relative;
+        margin: 3.5% auto;
+        width: 40%;
+        height: 10%;
+        margin-top: 3.5%;
+        font-weight: bold;
+        font-size: 2.7em;
+        font-family: sans-serif;
+        border-radius: 20px;
+        user-select: none;
+    }
+
+    .button-area div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .button-area span {
+        display: block;
+        font-size: 0.8em;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button-area .button-active span {
+        top: calc(0.7 * (100% + 3px));
+    }
+
+    .button-area .button-inactive {
+        background-color: white;
+        color: #3EB863;
+        border: 3px solid #3EB863;
+        clip-path: inset(0);
+    }
+
+    .button-area .button-active {
+        background-color: #3EB863;
+        color: white;
+        clip-path: inset(0 100% 0 0 );
+    }
+
+    .button-area:hover {
+        cursor: pointer;
+    }
+
+    .button-area:hover .button-inactive {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    .button-area:hover .button-active {
+        clip-path: inset(0);
+    }
+/* work-itemここまで */
+
+
+
+
+
+
+/* ポップアップここから */
+    .bg-cover-box {
+        z-index: 200;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.55);
+        width: 100vw;
+        height: 100vh;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .work-more-area {
+        z-index: 500;
+        position: fixed;
+        left: 50%;
+        top: calc(50% + 20px);
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        height: 80vh;
+        background-color: black;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .work-more-contents {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: #3EB863; */
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .work-more-area.open, .bg-cover-box.open, .work-more-contents.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .close-button {
+        z-index: 300;
+        position: absolute;
+        top: 0px;
+        left: calc(100% - 20px);
+        width: 20px;
+        height: 20px;
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    .close-button:hover {
+        cursor: pointer;
+    }
+
+    .close-button span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 28.3px;
+        height: 1px;
+        background-color: white;
+        transition: all 1s;
+    }
+
+    .close-button span:first-child {
+        transform-origin: center left;
+        transform: rotate(45deg);
+    }
+
+    .close-button span:last-child {
+        transform-origin: center right;
+        left: -8.3px;
+        transform: rotate(-45deg);
+    }
+/* ポップアップここまで */
+
+
+
+
+
+
+/* ポップアップ中身ここから */
+    
+/* ポップアップ中身ここまで */
