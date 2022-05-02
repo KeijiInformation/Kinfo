@@ -2,7 +2,12 @@
     function resizeBgImg() {
         let profileBoxWidth = document.querySelector(".profile-box").clientWidth;
         let profileBoxList = document.querySelectorAll(".profile-box:not(.about-programming)");
-        let bgImageHeight = profileBoxWidth * 2 / 3;
+        let bgImageHeight;
+        if (profileBoxWidth < 800) {
+            bgImageHeight = profileBoxWidth * 5 / 3;
+        } else {
+            bgImageHeight = profileBoxWidth * 2 / 3;
+        }
         for (let profileBox of profileBoxList) {
             profileBox.style.height = String(bgImageHeight) + "px";
         }
