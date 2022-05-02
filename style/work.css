@@ -20,6 +20,11 @@
 
 
 /* Works-contents-area全体ここから */
+    .works-contents-area {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     .works-contents-area ul {
         margin-top: 50px;
         display: flex;
@@ -135,7 +140,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: rgba(0,0,0,0.55);
+        background-color: rgba(0,0,0,0.9);
         width: 100vw;
         height: 100vh;
         visibility: hidden;
@@ -147,40 +152,42 @@
         z-index: 500;
         position: fixed;
         left: 50%;
-        top: calc(50% + 20px);
-        transform: translate(-50%, -50%);
+        top: 0;
+        transform: translateX(-50%);
         width: 80vw;
-        height: 80vh;
-        background-color: black;
+        height: 100vh;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
         opacity: 0;
     }
 
     .work-more-contents {
-        position: relative;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        /* background-color: #3EB863; */
+        background-color: rgb(210,210,210);
         opacity: 0;
         transition: all 0.3s ease-in-out;
     }
 
-    .work-more-area.open, .bg-cover-box.open, .work-more-contents.open {
+    .work-more-area.open, .bg-cover-box.open, .work-more-contents.open, .close-button.open {
         opacity: 1;
         visibility: visible;
+        z-index: 100;
     }
 
     .close-button {
         z-index: 300;
-        position: absolute;
-        top: 0px;
-        left: calc(100% - 20px);
-        width: 20px;
-        height: 20px;
-        background-color: rgba(255,255,255,0.2);
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
     }
 
     .close-button:hover {
@@ -191,10 +198,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 28.3px;
+        width: 42.4px;
         height: 1px;
         background-color: white;
-        transition: all 1s;
     }
 
     .close-button span:first-child {
@@ -204,7 +210,7 @@
 
     .close-button span:last-child {
         transform-origin: center right;
-        left: -8.3px;
+        left: -12.4px;
         transform: rotate(-45deg);
     }
 /* ポップアップここまで */
@@ -215,5 +221,115 @@
 
 
 /* ポップアップ中身ここから */
-    
+    .work-more-contents .head-box {
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 45%;
+        background: rgb(0,117,95);
+        background: linear-gradient(90deg, rgba(0,117,95,0.8) 0%, rgba(0,117,95,0.5) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        clip-path: inset(0 100% 0 0);
+        transition: all 1s 0.1s ease-in-out;
+    }
+
+    .work-more-contents.open > .head-box {
+        clip-path: inset(0);
+    }
+
+    .work-more-contents .head-box .head-image {
+        position: absolute;
+        transform: translateX(10%) scale(0.7);
+        opacity: 0.8;
+    }
+
+    .work-more-contents .head-box .text-area {
+        color: rgb(210,210,210);
+        text-shadow: 1px 1px 0 black;
+    }
+
+    .work-more-contents .head-box p {
+        font-size: 1rem;
+    }
+
+    .work-more-contents .head-box h1 {
+        position: relative;
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    .work-more-contents .head-box h1::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110%;
+        height: 2px;
+        border-radius: 30%;
+        background-color: rgb(210,210,210);
+        clip-path: inset(0 100%);
+        transition: all 2s 0.4s ease-in-out;
+    }
+
+    .work-more-contents.open .head-box h1::after {
+        clip-path: inset(0);
+    }
+
+    .work-more-contents .text-box {
+        display: flex;
+        position: relative;
+        gap: 5%;
+        color: rgba(0,0,0,0.55);
+        padding: 20px;
+        overflow: auto;
+    }
+
+    .work-more-contents .text-box > div {
+        width: 45%;
+    }
+
+    .work-more-contents .text-box ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-more-contents .text-box li {
+
+    }
+
+    .work-more-contents .text-box h1 {
+        position: relative;
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+
+    .work-more-contents .text-box h1::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110%;
+        height: 2px;
+        border-radius: 25%;
+        background-color: rgba(0,0,0,0.55);
+    }
+
+    .work-more-contents .text-box p {
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 1.3rem;
+    }
+
+    .work-more-contents .grid-area {
+        padding-top: 5px;
+        padding-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 144px);
+        font-size: 1.3rem;
+    }
 /* ポップアップ中身ここまで */

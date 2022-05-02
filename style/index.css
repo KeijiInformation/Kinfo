@@ -57,13 +57,12 @@
     margin-right: auto;
     font-size: 15px;
     font-weight: 10;
-    color: rgba(0, 0, 0, 0.5);
 }
 
 .section-title::before {
     content: "";
     position: relative;
-    top: 45px;
+    top: 33px;
     margin-left: auto;
     margin-right: auto;
     width: 100px;
@@ -83,6 +82,7 @@
     text-align: left;
     width: 50%;
     line-height: 1.5;
+    font-size: 1.2rem;
 }
 
 .main-section-content .center-line {
@@ -166,60 +166,8 @@
     display: block;
     line-height: 1.5;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: rgb(82, 82, 82);
-}
-
-.contact {
-    background-color: #e8e8e8;
-    padding: 20px 5%;
-    width: 100%;
-}
-
-.contact-content {
-    flex-direction: column;
-}
-
-.icon-area {
-    display: flex;
-    justify-content: center;
-}
-
-.icon-area a {
-    display: block;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 30%;
-}
-
-.icon-area a:first-child {
-    margin-right: 50px;
-}
-
-.icon-area a::after {
-    content: attr(data-icon-name);
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.icon-instagram::after {
-    text-shadow: 0px 0px 5px rgb(67, 1, 60);
-}
-
-.icon-twitter::after {
-    text-shadow: 0px 0px 5px rgb(0, 30, 95);
-}
-
-.contact-content .link-button {
-    margin: 0 auto;
-    margin-top: 40px;
 }
 /* 各セクションここまで */
 
@@ -247,8 +195,9 @@
     }
 
     .section-title::before {
-        top: 30px;
         width: 50px;
+        height: 2px;
+        top: 31px;
     }
 
     .section-title::after {
@@ -267,7 +216,7 @@
 
     .main-section-content p {
         width: 100%;
-        font-size: 11px;
+        font-size: 1.4rem;
     }
 
     .main-section-content.flex-reverse {
