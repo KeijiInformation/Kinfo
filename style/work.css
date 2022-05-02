@@ -141,7 +141,7 @@
         top: 0;
         left: 0;
         background-color: rgba(0,0,0,0.9);
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
@@ -333,3 +333,59 @@
         font-size: 1.3rem;
     }
 /* ポップアップ中身ここまで */
+
+
+
+
+
+
+/* レスポンシブここから */
+@media (max-width: 800px) {
+    .work-more-area {
+        width: 100%;
+    }
+
+    .close-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .close-button span {
+        top: 2px;
+        left: 3px;
+    }
+
+    .close-button span:last-child {
+        left: -9.4px;
+    }
+
+    .close-button.open {
+        z-index: 200;
+        top: 0px;
+        right: 0px;
+        background-color: rgba(0,117,95,0.3);
+    }
+
+    .work-more-contents .head-box {
+        height: 35%;
+        flex-flow: column;
+        padding: 30px;
+    }
+
+    .work-more-contents .head-box .text-area h1 {
+        font-size: 3rem;
+    }
+
+    .work-more-contents .head-box .head-image {
+        transform: translateY(20%);
+    }
+
+    .work-more-contents .text-box {
+        flex-direction: column;
+    }
+
+    .work-more-contents .text-box > div {
+        width: 100%;
+    }
+}
+/* レスポンシブここから */
