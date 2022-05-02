@@ -1,6 +1,6 @@
 // ポップアップ時にスクロール固定する処理
 function fixBackground(event) {
-    // event.preventDefault();
+    event.preventDefault();
 }
 // ポップアップ時にスクロール固定する処理
 
