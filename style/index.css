@@ -39,13 +39,31 @@
 
 
 /* 各セクションここから */
+body {
+    background-color: black;
+}
+
+.main-section-cover {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,14,255,0.16290266106442575) 100%);
+}
+
+.main-section-cover.reverse {
+    background: linear-gradient(90deg, rgba(0,14,255,0.16290266106442575) 0%, rgba(0,0,0,1) 100%);
+}
+
 .main-section {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     text-align: center;
     max-width: 1200px;
+    padding: 20px 5%;
     width: 90%;
+}
+
+.main-section:not(.works) {
+    color: white;
 }
 
 .section-title::after {
@@ -55,7 +73,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 10;
 }
 
@@ -72,8 +90,13 @@
     background-color: black;
 }
 
+.main-section:not(.works) .section-title::before {
+    background-color: white;
+}
+
 .main-section-content {
     display: flex;
+    align-items: center;
     position: relative;
     padding: 20px 0;
 }
@@ -85,20 +108,23 @@
     font-size: 1.2rem;
 }
 
-.main-section-content .center-line {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%);
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: calc(100% - 30px);
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+.img-area {
+    width: 50%;
 }
 
-.main-section-content img {
-    
+.img-area .img-circle {
+    position: relative;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+.concept .img-area .img-circle {
+    left: 40%;
+}
+
+.img-circle img {
+    border-radius: 50%;
 }
 
 .main-section-content.flex-reverse {
@@ -207,11 +233,7 @@
     .main-section-content {
         flex-direction: column;
         flex-flow: column-reverse;
-    }
-
-    .main-section img {
-        font-size: 12px;
-        margin-bottom: 10px;
+        gap: 20px;
     }
 
     .main-section-content p {
@@ -223,8 +245,8 @@
         flex-flow: column-reverse;
     }
 
-    .center-line {
-        display: none;
+    .main-section .img-area .img-circle {
+        left: 50%;
     }
 
     .works-list {
@@ -247,6 +269,10 @@
         top: 0;
         left: 0;
         width: 210px;
+    }
+
+    .works-list li .work-subtitle {
+        font-size: 1.2rem;
     }
 
     .works-list li .work-title {

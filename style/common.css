@@ -108,7 +108,7 @@ main {
     background-repeat: no-repeat;
     background-color: black;
     font-size: 40px;
-    color: white;
+    color: black;
     text-shadow: 0 0 2px white;
     box-shadow: 0 2px 3px black;
 }
@@ -118,7 +118,7 @@ main {
     top: 50%;
     right: 20%;
     transform: translateY(-50%);
-    text-shadow: 0 0 10px #8FBC8F;
+    text-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 1px 0 white, -1px 0 0 white, -1px -1px 0 white, 0 -1px 0 white, 1px -1px 0 white;
 }
 /* メインここまで */
 

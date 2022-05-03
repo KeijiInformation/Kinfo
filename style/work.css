@@ -5,12 +5,7 @@
     background-image: url("../img/works/first-view.jpg");
     background-position: center center;
     background-size: cover;
-    color: black;
     box-shadow: none;
-}
-
-.first-view-category-title {
-    text-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 1px 0 white, -1px 0 0 white, -1px -1px 0 white, 0 -1px 0 white, 1px -1px 0 white;
 }
 /* ファーストビューここまで */
 
