@@ -15,7 +15,6 @@ html {
 
 /* ヘッダーここから */
 .header-inner {
-    /* 配置 */
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -24,21 +23,17 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    /* サイズ */
     max-width: 1200px;
     height: 90px;
-    /* デザイン */
-    background-color: white;
-    /* レイアウト */
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-logo-box {
-    /* サイズ */
     width: 125px;
-    /* レイアウト */
     display: block;
 }
 
@@ -47,7 +42,6 @@ img {
 }
 
 .site-menu ul {
-    /* レイアウト */
     display: flex;
 }
 
@@ -65,7 +59,7 @@ img {
     left: -6px;
     width: calc(100% + 12px);
     height: 2px;
-    background-color: black;
+    background-color: white;
     clip-path: inset(0 100%);
     transition: all 0.3s;
 }
@@ -213,15 +207,15 @@ footer .site-menu li::after {
     .humberger-menu-icon span {
         display: block;
         width: 80%;
-        height: 3px;
+        height: 2px;
         border-radius: 20%;
-        background:black;
+        background:white;
         transform-origin: 0 50%;
         transition: all 0.2s ease-in-out;
     }
 
     .humberger-menu-icon.active span:nth-child(1) {
-        transform: rotate(30deg);
+        transform: rotate(27deg);
     }
 
     .humberger-menu-icon.active span:nth-child(2) {
@@ -229,7 +223,7 @@ footer .site-menu li::after {
     }
 
     .humberger-menu-icon.active span:nth-child(3) {
-        transform: rotate(-30deg);
+        transform: rotate(-27deg);
     }
 
     .humberger-menu-content {
@@ -261,6 +255,7 @@ footer .site-menu li::after {
 
     main {
         padding-top: 50px;
+        z-index: 1;
     }
 
     .first-view.fixed-page {

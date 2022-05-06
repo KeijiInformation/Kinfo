@@ -58,6 +58,9 @@
         footer.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
         document.body.style.overflowY = "scroll";
     }, (loadDurationTyping+1)*1000);
+    setTimeout(() => {
+        header.style.animation = "unset";
+    }, (loadDurationTyping+3)*1000);
     // 全要素表示ここまで
 
 // ロード時アニメーションここから
