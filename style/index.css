@@ -1,4 +1,56 @@
 @charset "utf-8";
+/* loadingアニメーションここから */
+main > *:not(.catch-copy-animation), header, footer {
+    visibility: hidden;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.catch-copy-animation {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 20px);
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px black;
+}
+
+.catch-copy-animation h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.catch-copy-animation h1 > span {
+    position: relative;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 40px;
+}
+
+.typing-line {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 50%;
+    background-color: white;
+    top: 50%;
+    opacity: 1;
+    transform: translateY(-50%);
+    right: -5px;
+    color: black;
+    visibility: hidden;
+}
+
+.catch-copy-animation h1 > span.appear, .typing-line.appear {
+    visibility: visible;
+}
+/* loadingアニメーションここまで */
 
 
 
@@ -20,18 +72,19 @@
     color: white;
     text-align: center;
     margin: 0 auto;
+    text-shadow: 1px 1px 2px black;
 }
 
 .first-view-text h1 {
     font-size: 40px;
-    text-shadow: 1px 1px 2px black;
+    display: flex;
+    justify-content: center;
 }
 
 .first-view-text p {
     font-size: 15px;
-    text-shadow: 1px 1px 2px black;
 }
-/* ファーストビューここから */
+/* ファーストビューここまで */
 
 
 
@@ -108,6 +161,30 @@ body {
     font-size: 1.2rem;
 }
 
+.main-section:not(.works) .main-section-content p {
+    opacity: 0;
+    transition: all 0.8s 0.5s ease-in-out;
+}
+
+.profile .main-section-content p {
+    transform: translate(30px);
+}
+
+.profile .main-section-content p.active {
+    transform: none;
+    opacity: 1;
+}
+
+.concept .main-section-content p {
+    transform: translateX(-30px);
+}
+
+.concept .main-section-content p.active {
+    opacity: 1;
+    transform: none;
+}
+
+
 .img-area {
     width: 50%;
 }
@@ -115,8 +192,22 @@ body {
 .img-area .img-circle {
     position: relative;
     left: 60%;
-    transform: translateX(-50%);
     width: 250px;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.profile .img-area .img-circle {
+    transform: translateX(calc(-50% + 30px));
+}
+
+.concept .img-area .img-circle {
+    transform: translateX(calc(-50% - 30px));
+}
+
+.img-area .img-circle.active {
+    opacity: 1;
+    transform: translateX(-50%);
 }
 
 .concept .img-area .img-circle {
@@ -210,6 +301,14 @@ body {
         font-size: 23px;
     }
 
+    .catch-copy-animation {
+        top: calc(50% - 10px);
+    }
+
+    .catch-copy-animation h1 span {
+        font-size: 23px;
+    }
+
     .first-view-text p {
         font-size: 11px;
     }
@@ -281,23 +380,6 @@ body {
 
     .works-list p.short-description {
         font-size: 10px;
-    }
-
-    .contact-content {
-        flex-flow: column;
-    }
-
-    .icon-area a {
-        width: 60px;
-        height: 60px;
-    }
-
-    .icon-area a::after {
-        font-size: 10px;
-        width: 100%;
-        left: 0;
-        text-align: center;
-        transform: scale(0.9);
     }
     /* 各セクションここまで */
 
