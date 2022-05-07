@@ -2,66 +2,76 @@
 
     // タイピングここから
     let loadDurationTyping;
-    const typingTexts = document.querySelectorAll(".catch-copy-animation h1 > span");
-    const typingLines = [...document.querySelectorAll(".typing-line")];
-    let delay=1, index=0;
-    for (let word of typingTexts) {
-        let line = typingLines[index];
-        let pastLine;
-        if (index != 0) {
-            pastLine = typingLines[index-1];
-        } else {
-            pastLine = false;
-        }
-        word.style.animation = "typing-appear 0.2s linear " + delay + "s 1 normal both";
-        if(index == 7) {
-            delay += 1;
-        }
-        setTimeout(() => {
-            line.classList.add("appear");
-            line.style.animation = "typing-line-blink 1s steps(1, jump-start) 0s infinite";
-            word.classList.add("appear");
-            if (pastLine != false) {
-                pastLine.classList.remove("appear");
+    function loadingAnimeTyping() {
+        const typingTexts = document.querySelectorAll(".catch-copy-animation h1 > span");
+        const typingLines = [...document.querySelectorAll(".typing-line")];
+        let delay=1, index=0;
+        for (let word of typingTexts) {
+            let line = typingLines[index];
+            let pastLine;
+            if (index != 0) {
+                pastLine = typingLines[index-1];
+            } else {
+                pastLine = false;
             }
-        }, delay*1000);
-        delay += 0.08;
-        index++;
+            word.style.animation = "typing-appear 0.2s linear " + delay + "s 1 normal both";
+            if(index == 7) {
+                delay += 1;
+            }
+            setTimeout(() => {
+                line.classList.add("appear");
+                line.style.animation = "typing-line-blink 1s steps(1, jump-start) 0s infinite";
+                word.classList.add("appear");
+                if (pastLine != false) {
+                    pastLine.classList.remove("appear");
+                }
+            }, delay*1000);
+            delay += 0.08;
+            index++;
+            loadDurationTyping = delay + 0.2;
+        }
     }
-    loadDurationTyping = delay + 0.2;
     // タイピングここまで
 
     // クロスフェード処理ここから
-    const typedTextBox = document.querySelector(".catch-copy-animation");
-    const firstViewText = document.querySelector(".first-view-text");
-    const firstViewSubText = document.querySelectorAll(".first-view-text p");
-    setTimeout(() => {
-        typedTextBox.style.animation = "fadein 2s ease-in-out 0s 1 reverse both";
-    }, loadDurationTyping*1000);
+    function loadingAnimeCrossfade() {
+        const typedTextBox = document.querySelector(".catch-copy-animation");
+        setTimeout(() => {
+            typedTextBox.style.animation = "fadein 2s ease-in-out 0s 1 reverse both";
+        }, loadDurationTyping*1000);
+    }
     // クロスフェード処理ここまで
 
     // 全要素表示ここから
-    const mainWidgets = document.querySelectorAll("main > *:not(.catch-copy-animation)");
-    const header = document.querySelector("header");
-    const footer = document.querySelector("footer");
-    setTimeout(() => {
-        for (let widget of mainWidgets) {
-            if (widget.classList.contains("first-view-text")) {
-                continue;
+    function loadingAnimeAppearAll() {
+        const mainWidgets = document.querySelectorAll("main > *:not(.catch-copy-animation)");
+        const header = document.querySelector("header");
+        const footer = document.querySelector("footer");
+        setTimeout(() => {
+            for (let widget of mainWidgets) {
+                if (widget.classList.contains("first-view-text")) {
+                    continue;
+                }
+                widget.style.visibility = "unset";
+                widget.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
             }
-            widget.style.visibility = "unset";
-            widget.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
-        }
-        header.style.visibility = "unset";
-        header.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
-        footer.style.visibility = "unset";
-        footer.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
-        document.body.style.overflowY = "scroll";
-    }, (loadDurationTyping+1)*1000);
-    setTimeout(() => {
-        header.style.animation = "unset";
-    }, (loadDurationTyping+3)*1000);
+            header.style.visibility = "unset";
+            header.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
+            footer.style.visibility = "unset";
+            footer.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
+            document.body.style.overflowY = "scroll";
+        }, (loadDurationTyping+1)*1000);
+        setTimeout(() => {
+            header.style.animation = "unset";
+        }, (loadDurationTyping+3)*1000);
+    }
     // 全要素表示ここまで
+
+    window.onload = function() {
+        loadingAnimeTyping();
+        loadingAnimeCrossfade();
+        loadingAnimeAppearAll();
+    };
 
 // ロード時アニメーションここから
 
