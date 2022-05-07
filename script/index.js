@@ -1,5 +1,15 @@
 // ロード時アニメーションここから
 
+    // 画面の非表示とスクロール禁止処理などここから
+    function widgetHidden() {
+        const targetWidgets = document.querySelectorAll("main > *:not(.catch-copy-animation), header, footer");
+        for (let target of targetWidgets) {
+            target.style.visibility = "hidden";
+        }
+        document.body.style.overflowY = "hidden";
+    }
+    // 画面の非表示とスクロール禁止処理などここまで
+
     // タイピングここから
     let loadDurationTyping;
     function loadingAnimeTyping() {
@@ -67,11 +77,17 @@
     }
     // 全要素表示ここまで
 
-    window.onload = function() {
-        loadingAnimeTyping();
-        loadingAnimeCrossfade();
-        loadingAnimeAppearAll();
-    };
+    function loadingAnimeSwitch() {
+        window.onload = function() {
+            // widgetHidden();
+            // loadingAnimeTyping();
+            // loadingAnimeCrossfade();
+            // loadingAnimeAppearAll();
+            calcWorksImgHeight();
+        };
+    }
+
+    loadingAnimeSwitch();
 
 // ロード時アニメーションここから
 
@@ -119,3 +135,19 @@ sectionTexts.forEach(function(sectionText) {
     observer.observe(sectionText);
 });
 // オブザーバーの設定ここまで
+
+
+
+
+
+
+// worksの画像の高さを計算ここから
+    function calcWorksImgHeight() {
+        const worksImgList = document.querySelectorAll(".works-list .img-area img");
+        for (let worksImg of worksImgList) {
+            let imgHeight = worksImg.clientHeight;
+            let imgArea = worksImg.parentNode;
+            imgArea.style.height = String(imgHeight) + "px";
+        }
+    }
+// worksの画像の高さを計算ここまで
