@@ -79,10 +79,10 @@
 
     function loadingAnimeSwitch() {
         window.onload = function() {
-            // widgetHidden();
-            // loadingAnimeTyping();
-            // loadingAnimeCrossfade();
-            // loadingAnimeAppearAll();
+            widgetHidden();
+            loadingAnimeTyping();
+            loadingAnimeCrossfade();
+            loadingAnimeAppearAll();
             calcWorksImgHeight();
         };
     }

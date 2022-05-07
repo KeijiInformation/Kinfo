@@ -404,7 +404,7 @@ body {
         font-size: 12px;
     }
 
-    .main-section-content {
+    .main-section-content:not(.works-list) {
         flex-direction: column;
         flex-flow: column-reverse;
         gap: 20px;
@@ -424,37 +424,34 @@ body {
     }
 
     .works-list {
-        flex-direction: row;
-        flex-flow: row;
-        padding-left: calc(50% - 105px);
-    }
-
-    .works-list a {
-        display: block;
-        margin-left: 22px;
-    }
-
-    .works-list li img {
-        width: 190px;
-        height: 106.88px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
 
     .works-list li {
-        top: 0;
-        left: 0;
-        width: 210px;
+        width: 100%;
     }
 
-    .works-list li .work-subtitle {
+    .works-list .img-area::after {
+        background-color: rgba(0,0,0,0.55);
+    }
+
+    .works-list .text-area dl, .works-list .short-description {
+        transform: none;
+        opacity: 1;
+    }
+
+    .works-list .text-area .work-subtitle {
         font-size: 1.2rem;
     }
 
-    .works-list li .work-title {
-        font-size: 18px;
+    .works-list .text-area .work-title {
+        font-size: 1.8rem;
     }
 
-    .works-list p.short-description {
-        font-size: 10px;
+    .works-list .text-area .short-description {
+        font-size: 1rem;
     }
     /* 各セクションここまで */
 
