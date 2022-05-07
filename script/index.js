@@ -2,7 +2,7 @@
 
     // 画面の非表示とスクロール禁止処理などここから
     function widgetHidden() {
-        const targetWidgets = document.querySelectorAll("main > *:not(.catch-copy-animation), header, footer");
+        const targetWidgets = document.querySelectorAll("main > *:not(.catch-copy-animation, .bg-animation), header, footer");
         for (let target of targetWidgets) {
             target.style.visibility = "hidden";
         }
@@ -43,18 +43,25 @@
     }
     // タイピングここまで
 
+    // 背景アニメーションここから
+    function bgAnimation() {
+        const bgArea = document.querySelector(".bg-animation");
+        bgArea.style.animation = "bg-animation 3s ease-in-out " + (loadDurationTyping-1) + "s 1 normal both";
+    }
+    // 背景アニメーションここまで
+
     // クロスフェード処理ここから
     function loadingAnimeCrossfade() {
         const typedTextBox = document.querySelector(".catch-copy-animation");
         setTimeout(() => {
             typedTextBox.style.animation = "fadein 2s ease-in-out 0s 1 reverse both";
-        }, loadDurationTyping*1000);
+        }, (loadDurationTyping+0.5)*1000);
     }
     // クロスフェード処理ここまで
 
     // 全要素表示ここから
     function loadingAnimeAppearAll() {
-        const mainWidgets = document.querySelectorAll("main > *:not(.catch-copy-animation)");
+        const mainWidgets = document.querySelectorAll("main > *:not(.catch-copy-animation, .bg-animation)");
         const header = document.querySelector("header");
         const footer = document.querySelector("footer");
         setTimeout(() => {
@@ -70,10 +77,10 @@
             footer.style.visibility = "unset";
             footer.style.animation = "fadein 2s ease-in-out 0s 1 normal both";
             document.body.style.overflowY = "scroll";
-        }, (loadDurationTyping+1)*1000);
+        }, (loadDurationTyping+2)*1000);
         setTimeout(() => {
             header.style.animation = "unset";
-        }, (loadDurationTyping+3)*1000);
+        }, (loadDurationTyping+4)*1000);
     }
     // 全要素表示ここまで
 
@@ -81,6 +88,7 @@
         window.onload = function() {
             widgetHidden();
             loadingAnimeTyping();
+            bgAnimation();
             loadingAnimeCrossfade();
             loadingAnimeAppearAll();
             calcWorksImgHeight();

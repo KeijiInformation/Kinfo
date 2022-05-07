@@ -47,3 +47,12 @@
         opacity: 1;
     }
 }
+
+@keyframes bg-animation {
+    0% {
+        clip-path: inset(0 0 0 100%);
+    }
+    100% {
+        clip-path: inset(0);
+    }
+}
