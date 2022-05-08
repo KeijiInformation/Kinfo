@@ -1,29 +1,208 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HTML・CSS・JS・Pythonなどのプログラミング言語を用いて理想を実現します。">
-    <title>Kinfo</title>
-    <!-- CSS読み込みここから -->
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/work.css">
-    <!-- CSS読み込みここまで -->
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="HTML・CSS・JS・Pythonなどのプログラミング言語を用いて理想を実現します。"
+        />
+        <title>Kinfo</title>
+        <!-- CSS読み込みここから -->
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/common.css" />
+        <link rel="stylesheet" href="./style/work.css" />
+        <!-- CSS読み込みここまで -->
+    </head>
 
+    <body>
+        <!-- ヘッダーここから -->
+        <header>
+            <div class="header-inner">
+                <a class="header-logo-box" href="./index.html">
+                    <img
+                        src="./img/common/Kinfo-logo-dark.png"
+                        alt="Kinfoのロゴ画像"
+                    />
+                </a>
+                <div class="site-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="./profile.html">PROFILE</a></li>
+                            <li><a href="./work.html">WORKS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="humberger-menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="humberger-menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="./profile.html">PROFILE</a></li>
+                            <li><a href="./work.html">WORKS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- ヘッダーここまで -->
 
+        <!-- メインここから -->
+        <main>
+            <div class="first-view fixed-page">
+                <h1 class="first-view-category-title">Works</h1>
+            </div>
 
+            <div class="works-contents-area">
+                <ul>
+                    <li>
+                        <div class="work-item">
+                            <p class="sub-title">学習スケジュール管理アプリ</p>
+                            <p class="title">Ebbing Learn</p>
+                            <img
+                                class="EbbingLear"
+                                src="./img/works/EbbingLearn-image.png"
+                                alt="EbbingLearnのイメージ画像"
+                            />
+                            <div class="button-area EbbingLearn">
+                                <div class="button-inactive">
+                                    <span>View More</span>
+                                </div>
+                                <div class="button-active">
+                                    <span>View More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="work-item">
+                            <p class="sub-title">
+                                友人間スケジュール調整アプリ
+                            </p>
+                            <p class="title">Evention</p>
+                            <img
+                                src="./img/works/EbbingLearn-image.png"
+                                alt="EbbingLearnのイメージ画像"
+                            />
+                            <div class="button-area Evention">
+                                <div class="button-inactive">
+                                    <span>View More</span>
+                                </div>
+                                <div class="button-active">
+                                    <span>View More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
+            <div class="bg-cover-box"></div>
+            <div class="close-button"><span></span><span></span></div>
+            <div class="work-more-area">
+                <div class="work-more-contents EbbingLearn">
+                    <div class="head-box">
+                        <div class="text-area">
+                            <p>学習スケジュール管理アプリ</p>
+                            <h1>Ebbing Learn</h1>
+                        </div>
+                        <img
+                            src="./img/works/EbbingLearn-head.png"
+                            alt="EbbingLearnのイメージ画像"
+                            class="head-image"
+                        />
+                    </div>
+                    <div class="text-box">
+                        <div class="left-area">
+                            <ul>
+                                <li>
+                                    <h1>概要</h1>
+                                    <p>
+                                        効率的な学習をするためのスケジュール作成を補助するためのアプリケーションです。学習で重要なのは「反復と継続」ですが、これらを考慮して計画を立てようとすると、面倒でやらなかったり非効率な計画になったりとうまくいかないことが多いと思います。このアプリでは、そんな「反復・継続」の両方を実現する素晴らしい学習スケジュールを立てるのを手助けします。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-area">
+                            <ul>
+                                <li>
+                                    <h1>特徴</h1>
+                                    <p>
+                                        勉強するモチベーションを保ち続けるために、目標を大・中・小に細分化して目の前の目標を分かりやすくする、終わったタスクが積み重なって目に見える形で成果を見れる、休憩日などを設けるなど様々な工夫をしています。
+                                    </p>
+                                </li>
+                                <li>
+                                    <h1>開発環境</h1>
+                                    <span class="grid-area">
+                                        <span>Webフレームワーク:</span
+                                        ><span>Django</span>
+                                        <span>DataBase:</span
+                                        ><span>MySQL</span>
+                                        <span>フロントエンド</span
+                                        ><span>HTML/CSS/JavaScript</span>
+                                        <span>サーバー:</span
+                                        ><span>Heroku</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-more-contents Evention">
+                    <div class="head-box">
+                        <div class="text-area">
+                            <p>友人間スケジュール調整アプリ</p>
+                            <h1>Evention</h1>
+                        </div>
+                        <img
+                            src="./img/works/Evention-head.png"
+                            alt="Eventionのイメージ画像"
+                            class="head-image"
+                        />
+                    </div>
+                    <div class="text-box">
+                        <div class="left-area">
+                            <ul>
+                                <li>
+                                    <h1>概要</h1>
+                                    <p>
+                                        友人間のスケジュール調整やお金の貸し借りの管理など、遊び周りの補助をするアプリケーションです。LINEなどのSNSよりも手軽に、さらに便利な機能によってサポートします。
+                                    </p>
+                                </li>
+                                <li>
+                                    <h1>特徴</h1>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-area">
+                            <ul>
+                                <li>
+                                    <h1>開発環境</h1>
+                                    <span class="grid-area">
+                                        <span>Webフレームワーク:</span
+                                        ><span>Django</span>
+                                        <span>DataBase:</span
+                                        ><span>MySQL</span>
+                                        <span>フロントエンド</span
+                                        ><span>HTML/CSS/JavaScript</span>
+                                        <span>サーバー:</span
+                                        ><span>Heroku</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- メインここまで -->
 
-
-<body>
-    <!-- ヘッダーここから -->
-    <header>
-        <div class="header-inner">
-            <a class="header-logo-box" href="./index.html">
-                <img src="./img/common/Kinfo-logo-dark.png" alt="Kinfoのロゴ画像">
-            </a>
+        <!-- フッターここから -->
+        <footer>
             <div class="site-menu">
                 <nav>
                     <ul>
@@ -32,188 +211,38 @@
                     </ul>
                 </nav>
             </div>
-            <div class="humberger-menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="contact-icon">
+                <a href="https://www.instagram.com/kinfo417"
+                    ><img
+                        src="./img/index/instagram-icon.png"
+                        alt="instagramのアイコン画像"
+                /></a>
+                <a href="https://twitter.com/Kinfo417"
+                    ><img
+                        src="./img/index/twitter-icon.png"
+                        alt="twitterのアイコン画像"
+                /></a>
             </div>
-            <div class="humberger-menu-content">
-                <nav>
-                    <ul>
-                        <li><a href="./profile.html">PROFILE</a></li>
-                        <li><a href="./work.html">WORKS</a></li>
-                    </ul>
-                </nav>
+            <div class="contact-mail">
+                <img
+                    src="./img/index/mail-icon.png"
+                    alt="メールのアイコン画像"
+                />
+                <p>kinformation417@gmail.com</p>
             </div>
-        </div>
-    </header>
-    <!-- ヘッダーここまで -->
-
-
-
-
-
-
-    <!-- メインここから -->
-    <main>
-
-        <div class="first-view fixed-page">
-            <h1 class="first-view-category-title">Works</h1>
-        </div>
-
-        <div class="works-contents-area">
-            <ul>
-                <li>
-                    <div class="work-item">
-                        <p class="sub-title">学習スケジュール管理アプリ</p>
-                        <p class="title">Ebbing Learn</p>
-                        <img class="EbbingLear" src="./img/works/EbbingLearn-image.png" alt="EbbingLearnのイメージ画像">
-                        <div class="button-area EbbingLearn">
-                            <div class="button-inactive"><span>View More</span></div>
-                            <div class="button-active"><span>View More</span></div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="work-item">
-                        <p class="sub-title">友人間スケジュール調整アプリ</p>
-                        <p class="title">Evention</p>
-                        <img src="./img/works/EbbingLearn-image.png" alt="EbbingLearnのイメージ画像">
-                        <div class="button-area Evention">
-                            <div class="button-inactive"><span>View More</span></div>
-                            <div class="button-active"><span>View More</span></div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="bg-cover-box"></div>
-        <div class="close-button"><span></span><span></span></div>
-        <div class="work-more-area">
-            <div class="work-more-contents EbbingLearn">
-                <div class="head-box">
-                    <div class="text-area">
-                        <p>学習スケジュール管理アプリ</p>
-                        <h1>Ebbing Learn</h1>
-                    </div>
-                    <img src="./img/works/EbbingLearn-head.png" alt="EbbingLearnのイメージ画像" class="head-image">
-                </div>
-                <div class="text-box">
-                    <div class="left-area">
-                        <ul>
-                            <li>
-                                <h1>概要</h1>
-                                <p>
-                                    効率的な学習をするためのスケジュール作成を補助するためのアプリケーションです。学習で重要なのは「反復と継続」ですが、これらを考慮して計画を立てようとすると、面倒でやらなかったり非効率な計画になったりとうまくいかないことが多いと思います。このアプリでは、そんな「反復・継続」の両方を実現する素晴らしい学習スケジュールを立てるのを手助けします。
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right-area">
-                        <ul>
-                            <li>
-                                <h1>特徴</h1>
-                                <p>
-                                    勉強するモチベーションを保ち続けるために、目標を大・中・小に細分化して目の前の目標を分かりやすくする、終わったタスクが積み重なって目に見える形で成果を見れる、休憩日などを設けるなど様々な工夫をしています。
-                                </p>
-                            </li>
-                            <li>
-                                <h1>開発環境</h1>
-                                <span class="grid-area">
-                                    <span>Webフレームワーク:</span><span>Django</span>
-                                    <span>DataBase:</span><span>MySQL</span>
-                                    <span>フロントエンド</span><span>HTML/CSS/JavaScript</span>
-                                    <span>サーバー:</span><span>Heroku</span>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="footer-logo">
+                <img
+                    src="./img/common/Kinfo-logo-dark.png"
+                    alt="Kinfoのロゴ画像"
+                />
             </div>
-            <div class="work-more-contents Evention">
-                <div class="head-box">
-                    <div class="text-area">
-                        <p>友人間スケジュール調整アプリ</p>
-                        <h1>Evention</h1>
-                    </div>
-                    <img src="./img/works/Evention-head.png" alt="Eventionのイメージ画像" class="head-image">
-                </div>
-                <div class="text-box">
-                    <div class="left-area">
-                        <ul>
-                            <li>
-                                <h1>概要</h1>
-                                <p>
-                                    友人間のスケジュール調整やお金の貸し借りの管理など、遊び周りの補助をするアプリケーションです。LINEなどのSNSよりも手軽に、さらに便利な機能によってサポートします。
-                                </p>
-                            </li>
-                            <li>
-                                <h1>特徴</h1>
-                                <p>
-                                    
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right-area">
-                        <ul>
-                            <li>
-                                <h1>開発環境</h1>
-                                <span class="grid-area">
-                                    <span>Webフレームワーク:</span><span>Django</span>
-                                    <span>DataBase:</span><span>MySQL</span>
-                                    <span>フロントエンド</span><span>HTML/CSS/JavaScript</span>
-                                    <span>サーバー:</span><span>Heroku</span>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <p class="copyright"><small>&copy;Kinfo</small></p>
+        </footer>
+        <!-- フッターここまで -->
 
-    </main>
-    <!-- メインここまで -->
-
-
-
-
-
-
-    <!-- フッターここから -->
-    <footer>
-        <div class="site-menu">
-            <nav>
-                <ul>
-                    <li><a href="./profile.html">PROFILE</a></li>
-                    <li><a href="./work.html">WORKS</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="contact-icon">
-            <a href="https://www.instagram.com/kinfo417"><img src="./img/index/instagram-icon.png" alt="instagramのアイコン画像"></a>
-            <a href="https://twitter.com/Kinfo417"><img src="./img/index/twitter-icon.png" alt="twitterのアイコン画像"></a>
-        </div>
-        <div class="contact-mail">
-            <img src="./img/index/mail-icon.png" alt="メールのアイコン画像">
-            <p>kinformation417@gmail.com</p>
-        </div>
-        <div class="footer-logo">
-            <img src="./img/common/Kinfo-logo-dark.png" alt="Kinfoのロゴ画像">
-        </div>
-        <p class="copyright"><small>&copy;Kinfo</small></p>
-    </footer>
-    <!-- フッターここまで -->
-
-
-
-
-
-
-    <!-- JS読み込みここから -->
-    <script src="./script/common.js"></script>
-    <script src="./script/work.js"></script>
-    <!-- JS読み込みここまで -->
-</body>
+        <!-- JS読み込みここから -->
+        <script src="./script/common.js"></script>
+        <script src="./script/work.js"></script>
+        <!-- JS読み込みここまで -->
+    </body>
 </html>

@@ -1,30 +1,222 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HTML・CSS・JS・Pythonなどのプログラミング言語を用いて理想を実現します。">
-    <title>Kinfo</title>
-    <!-- CSS読み込みここから -->
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/animation.css">
-    <!-- CSS読み込みここまで -->
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="HTML・CSS・JS・Pythonなどのプログラミング言語を用いて理想を実現します。"
+        />
+        <title>Kinfo</title>
+        <!-- CSS読み込みここから -->
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/common.css" />
+        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/animation.css" />
+        <!-- CSS読み込みここまで -->
+    </head>
 
+    <body>
+        <!-- ヘッダーここから -->
+        <header>
+            <div class="header-inner">
+                <a class="header-logo-box" href="./index.html">
+                    <img
+                        src="./img/common/Kinfo-logo-dark.png"
+                        alt="Kinfoのロゴ画像"
+                    />
+                </a>
+                <div class="site-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="./profile.html">PROFILE</a></li>
+                            <li><a href="./work.html">WORKS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="humberger-menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="humberger-menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="./profile.html">PROFILE</a></li>
+                            <!-- <li><a href="./concept.html">CONCEPT</a></li> -->
+                            <li><a href="./work.html">WORKS</a></li>
+                            <!-- <li><a href="./contact.html">CONTACT</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- ヘッダーここまで -->
 
+        <!-- メインここから -->
+        <main>
+            <!-- loadingアニメーションここから -->
+            <div class="bg-animation"></div>
+            <div class="catch-copy-animation">
+                <h1>
+                    <span>P<span class="typing-line"></span></span>
+                    <span>r<span class="typing-line"></span></span>
+                    <span>o<span class="typing-line"></span></span>
+                    <span>g<span class="typing-line"></span></span>
+                    <span>r<span class="typing-line"></span></span>
+                    <span>a<span class="typing-line"></span></span>
+                    <span>m<span class="typing-line"></span></span>
+                    <span>&nbsp;<span class="typing-line"></span></span>
+                    <span>f<span class="typing-line"></span></span>
+                    <span>o<span class="typing-line"></span></span>
+                    <span>r<span class="typing-line"></span></span>
+                    <span>&nbsp;<span class="typing-line"></span></span>
+                    <span>y<span class="typing-line"></span></span>
+                    <span>o<span class="typing-line"></span></span>
+                    <span>u<span class="typing-line"></span></span>
+                    <span>r<span class="typing-line"></span></span>
+                    <span>&nbsp;<span class="typing-line"></span></span>
+                    <span>i<span class="typing-line"></span></span>
+                    <span>d<span class="typing-line"></span></span>
+                    <span>e<span class="typing-line"></span></span>
+                    <span>a<span class="typing-line"></span></span>
+                    <span>l<span class="typing-line"></span></span>
+                </h1>
+            </div>
+            <!-- loadingアニメーションここまで -->
 
+            <!-- ファーストビューここから -->
+            <div class="first-view">
+                <div class="first-view-text">
+                    <h1>あなたの理想をプログラムで</h1>
+                    <p>作りたいものがある人</p>
+                    <p>その仕事、お任せください。</p>
+                </div>
+            </div>
+            <!-- ファーストビューここまで -->
 
+            <!-- プロフィールここから -->
+            <div class="main-section-cover">
+                <div class="profile main-section">
+                    <h1
+                        class="section-title"
+                        data-section-title-en="- Profile -"
+                    >
+                        自己紹介
+                    </h1>
+                    <div class="main-section-content">
+                        <p>
+                            2001年生まれの現役大学生です。<br />
+                            学校の授業だけでなく独学でプログラミングを学習し、現在は主にウェブ制作を行っています。<br />
+                            正しい道筋を立てて努力をすればできないことはないという信念を基に、日々能力向上を目標に学習し続けています。
+                        </p>
+                        <div class="img-area">
+                            <div class="img-circle">
+                                <img
+                                    src="./img/index/profile-img-circle.jpg"
+                                    alt="プロフィール画像"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- プロフィールここまで -->
 
+            <!-- コンセプトここから -->
+            <div class="main-section-cover reverse">
+                <div class="concept main-section">
+                    <h1
+                        class="section-title"
+                        data-section-title-en="- Concept -"
+                    >
+                        信念
+                    </h1>
+                    <div class="main-section-content flex-reverse">
+                        <p>
+                            一人一人の理想に向き合いながら、より良い終着点を探します。<br />
+                            重要なのは「実現したいこと」だけでも「費用・期間」だけでもなく、
+                            それらを総合してどうなるかということだと考えます。
+                        </p>
+                        <div class="img-area">
+                            <div class="img-circle">
+                                <img
+                                    src="./img/index/concept-img.jpg"
+                                    alt="コンセプト画像"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- コンセプトここまで -->
 
-<body>
-    <!-- ヘッダーここから -->
-    <header>
-        <div class="header-inner">
-            <a class="header-logo-box" href="./index.html">
-                <img src="./img/common/Kinfo-logo-dark.png" alt="Kinfoのロゴ画像">
-            </a>
+            <!-- 実績ここから -->
+            <div class="works main-section">
+                <h1 class="section-title" data-section-title-en="- Works -">
+                    実績
+                </h1>
+                <ul class="works-list main-section-content">
+                    <li>
+                        <div class="img-area">
+                            <img
+                                src="./img/works/EbbingLearn-image.png"
+                                alt="EbbingLearnのイメージ画像"
+                            />
+                        </div>
+                        <div class="text-area">
+                            <dl>
+                                <dt>
+                                    <p class="work-subtitle">
+                                        学習スケジュール管理アプリ
+                                    </p>
+                                    <p class="work-title">-EbbingLearn-</p>
+                                </dt>
+                            </dl>
+                            <p class="short-description">
+                                じっくり考えると時間がかかってしまう、
+                                効率的かつ実用的な勉強スケジュールと
+                                その実行をサポートします。
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-area">
+                            <img
+                                src="./img/works/Evention-image.jpg"
+                                alt="Eventionのイメージ画像"
+                            />
+                        </div>
+                        <div class="text-area">
+                            <dl>
+                                <dt>
+                                    <p class="work-subtitle">
+                                        友人間スケジュール調整アプリ
+                                    </p>
+                                    <p class="work-title">-Evention-</p>
+                                </dt>
+                            </dl>
+                            <p class="short-description">
+                                友人と遊ぶ際、予定の擦り合わせやお金
+                                の貸し借り等に困った経験は
+                                ありませんか？Eventionなら簡単に行うことができます。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more-button-area">
+                    <div class="buttons">
+                        <a href="./work.html">MORE</a>
+                        <a href="./work.html">MORE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 実績ここまで -->
+        </main>
+        <!-- メインここまで -->
+
+        <!-- フッターここから -->
+        <footer>
             <div class="site-menu">
                 <nav>
                     <ul>
@@ -33,207 +225,38 @@
                     </ul>
                 </nav>
             </div>
-            <div class="humberger-menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="contact-icon">
+                <a href="https://www.instagram.com/kinfo417"
+                    ><img
+                        src="./img/index/instagram-icon.png"
+                        alt="instagramのアイコン画像"
+                /></a>
+                <a href="https://twitter.com/Kinfo417"
+                    ><img
+                        src="./img/index/twitter-icon.png"
+                        alt="twitterのアイコン画像"
+                /></a>
             </div>
-            <div class="humberger-menu-content">
-                <nav>
-                    <ul>
-                        <li><a href="./profile.html">PROFILE</a></li>
-                        <!-- <li><a href="./concept.html">CONCEPT</a></li> -->
-                        <li><a href="./work.html">WORKS</a></li>
-                        <!-- <li><a href="./contact.html">CONTACT</a></li> -->
-                    </ul>
-                </nav>
+            <div class="contact-mail">
+                <img
+                    src="./img/index/mail-icon.png"
+                    alt="メールのアイコン画像"
+                />
+                <p>kinformation417@gmail.com</p>
             </div>
-        </div>
-    </header>
-    <!-- ヘッダーここまで -->
-
-
-
-
-
-
-    <!-- メインここから -->
-    <main>
-        <!-- loadingアニメーションここから -->
-        <div class="bg-animation"></div>
-        <div class="catch-copy-animation">
-            <h1>
-                <span>P<span class="typing-line"></span></span>
-                <span>r<span class="typing-line"></span></span>
-                <span>o<span class="typing-line"></span></span>
-                <span>g<span class="typing-line"></span></span>
-                <span>r<span class="typing-line"></span></span>
-                <span>a<span class="typing-line"></span></span>
-                <span>m<span class="typing-line"></span></span>
-                <span>&nbsp;<span class="typing-line"></span></span>
-                <span>f<span class="typing-line"></span></span>
-                <span>o<span class="typing-line"></span></span>
-                <span>r<span class="typing-line"></span></span>
-                <span>&nbsp;<span class="typing-line"></span></span>
-                <span>y<span class="typing-line"></span></span>
-                <span>o<span class="typing-line"></span></span>
-                <span>u<span class="typing-line"></span></span>
-                <span>r<span class="typing-line"></span></span>
-                <span>&nbsp;<span class="typing-line"></span></span>
-                <span>i<span class="typing-line"></span></span>
-                <span>d<span class="typing-line"></span></span>
-                <span>e<span class="typing-line"></span></span>
-                <span>a<span class="typing-line"></span></span>
-                <span>l<span class="typing-line"></span></span>
-            </h1>
-        </div>
-        <!-- loadingアニメーションここまで -->
-
-        <!-- ファーストビューここから -->
-        <div class="first-view">
-            <div class="first-view-text">
-                <h1>あなたの理想をプログラムで</h1>
-                <p>作りたいものがある人</p>
-                <p>その仕事、お任せください。</p>
+            <div class="footer-logo">
+                <img
+                    src="./img/common/Kinfo-logo-dark.png"
+                    alt="Kinfoのロゴ画像"
+                />
             </div>
-        </div>
-        <!-- ファーストビューここまで -->
+            <p class="copyright"><small>&copy;Kinfo</small></p>
+        </footer>
+        <!-- フッターここまで -->
 
-        <!-- プロフィールここから -->
-        <div class="main-section-cover">
-            <div class="profile main-section">
-                <h1 class="section-title" data-section-title-en="- Profile -">自己紹介</h1>
-                <div class="main-section-content">
-                    <p>
-                        2001年生まれの現役大学生です。<br>
-                        学校の授業だけでなく独学でプログラミングを学習し、現在は主にウェブ制作を行っています。<br>
-                        正しい道筋を立てて努力をすればできないことはないという信念を基に、日々能力向上を目標に学習し続けています。
-                    </p>
-                    <div class="img-area">
-                        <div class="img-circle">
-                            <img src="./img/index/profile-img-circle.jpg" alt="プロフィール画像">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- プロフィールここまで -->
-        </div>
-
-        <!-- コンセプトここから -->
-        <div class="main-section-cover reverse">
-            <div class="concept main-section">
-                <h1 class="section-title" data-section-title-en="- Concept -">信念</h1>
-                <div class="main-section-content flex-reverse">
-                    <p>
-                        一人一人の理想に向き合いながら、より良い終着点を探します。<br>
-                        重要なのは「実現したいこと」だけでも「費用・期間」だけでもなく、
-                        それらを総合してどうなるかということだと考えます。
-                    </p>
-                    <div class="img-area">
-                        <div class="img-circle">
-                            <img src="./img/index/concept-img.jpg" alt="コンセプト画像">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- コンセプトここまで -->
-
-        <!-- 実績ここから -->
-        <div class="works main-section">
-            <h1 class="section-title" data-section-title-en="- Works -">実績</h1>
-            <ul class="works-list main-section-content">
-                <li>
-                    <div class="img-area"><img src="./img/works/EbbingLearn-image.png" alt="EbbingLearnのイメージ画像"></div>
-                    <div class="text-area">
-                        <dl>
-                            <dt>
-                                <p class="work-subtitle">
-                                    学習スケジュール管理アプリ
-                                </p>
-                                <p class="work-title">
-                                    -EbbingLearn-
-                                </p>
-                            </dt>
-                        </dl>
-                        <p class="short-description">
-                            じっくり考えると時間がかかってしまう、
-                            効率的かつ実用的な勉強スケジュールと
-                            その実行をサポートします。
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="img-area"><img src="./img/works/Evention-image.jpg" alt="Eventionのイメージ画像"></div>
-                    <div class="text-area">
-                        <dl>
-                            <dt>
-                                <p class="work-subtitle">
-                                    友人間スケジュール調整アプリ
-                                </p>
-                                <p class="work-title">
-                                    -Evention-
-                                </p>
-                            </dt>
-                        </dl>
-                        <p class="short-description">
-                            友人と遊ぶ際、予定の擦り合わせやお金
-                            の貸し借り等に困った経験は
-                            ありませんか？Eventionなら簡単に行うことができます。
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <div class="more-button-area">
-                <div class="buttons">
-                    <a href="./work.html">MORE</a>
-                    <a href="./work.html">MORE</a>
-                </div>
-            </div>
-        </div>
-        <!-- 実績ここまで -->
-
-    </main>
-    <!-- メインここまで -->
-
-
-
-
-
-
-    <!-- フッターここから -->
-    <footer>
-        <div class="site-menu">
-            <nav>
-                <ul>
-                    <li><a href="./profile.html">PROFILE</a></li>
-                    <li><a href="./work.html">WORKS</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="contact-icon">
-            <a href="https://www.instagram.com/kinfo417"><img src="./img/index/instagram-icon.png" alt="instagramのアイコン画像"></a>
-            <a href="https://twitter.com/Kinfo417"><img src="./img/index/twitter-icon.png" alt="twitterのアイコン画像"></a>
-        </div>
-        <div class="contact-mail">
-            <img src="./img/index/mail-icon.png" alt="メールのアイコン画像">
-            <p>kinformation417@gmail.com</p>
-        </div>
-        <div class="footer-logo">
-            <img src="./img/common/Kinfo-logo-dark.png" alt="Kinfoのロゴ画像">
-        </div>
-        <p class="copyright"><small>&copy;Kinfo</small></p>
-    </footer>
-    <!-- フッターここまで -->
-
-
-
-
-
-
-    <!-- JS読み込みここから -->
-    <script src="./script/common.js"></script>
-    <script src="./script/index.js"></script>
-    <!-- JS読み込みここまで -->
-</body>
+        <!-- JS読み込みここから -->
+        <script src="./script/common.js"></script>
+        <script src="./script/index.js"></script>
+        <!-- JS読み込みここまで -->
+    </body>
 </html>

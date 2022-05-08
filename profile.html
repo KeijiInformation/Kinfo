@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HTML・CSS・JS・Pythonなどのプログラミング言語を用いて理想を実現します。">
-    <title>Kinfo</title>
-    <!-- CSS読み込みここから -->
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/profile.css">
-    <!-- CSS読み込みここまで -->
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="HTML・CSS・JS・Pythonなどのプログラミング言語を用いて理想を実現します。"
+        />
+        <title>Kinfo</title>
+        <!-- CSS読み込みここから -->
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/common.css" />
+        <link rel="stylesheet" href="./style/profile.css" />
+        <!-- CSS読み込みここまで -->
+    </head>
 
-
-
-
-
-
-<body>
-    <!-- ヘッダーここから -->
-    <header>
-        <div class="header-inner">
-            <a class="header-logo-box" href="./index.html">
-                <img src="./img/common/Kinfo-logo-dark.png" alt="Kinfoのロゴ画像">
-            </a>
-            <div class="site-menu">
-                <nav>
-                    <ul>
-                        <li><a href="./profile.html">PROFILE</a></li>
-                        <li><a href="./work.html">WORKS</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="humberger-menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="humberger-menu-content">
-                <nav>
-                    <ul>
-                        <li><a href="./profile.html">PROFILE</a></li>
-                        <li><a href="./work.html">WORKS</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- ヘッダーここまで -->
-
-
-
-
-
-
-    <!-- メインここから -->
-    <main>
-
-        <div class="first-view fixed-page">
-            <h1 class="first-view-category-title">Profile</h1>
-        </div>
-
-        <div class="profile-contents basic-info">
-
-            <div class="profile-box base-info">
-                <h2>基本情報</h2>
-                <div class="bg-img-area">
-                    <img src="./img/profile/base-bg.jpg" alt="基本情報紹介の画像">
+    <body>
+        <!-- ヘッダーここから -->
+        <header>
+            <div class="header-inner">
+                <a class="header-logo-box" href="./index.html">
+                    <img
+                        src="./img/common/Kinfo-logo-dark.png"
+                        alt="Kinfoのロゴ画像"
+                    />
+                </a>
+                <div class="site-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="./profile.html">PROFILE</a></li>
+                            <li><a href="./work.html">WORKS</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="profile-detail">
+                <div class="humberger-menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="humberger-menu-content">
+                    <nav>
+                        <ul>
+                            <li><a href="./profile.html">PROFILE</a></li>
+                            <li><a href="./work.html">WORKS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- ヘッダーここまで -->
+
+        <!-- メインここから -->
+        <main>
+            <div class="first-view fixed-page">
+                <h1 class="first-view-category-title">Profile</h1>
+            </div>
+
+            <div class="profile-contents basic-info">
+                <div class="profile-box base-info">
+                    <h2>基本情報</h2>
+                    <div class="bg-img-area">
+                        <img
+                            src="./img/profile/base-bg.jpg"
+                            alt="基本情報紹介の画像"
+                        />
+                    </div>
+                    <div class="profile-detail">
                         <ul class="base-info-list">
                             <li>
                                 <dl>
@@ -98,163 +95,230 @@
                         <div class="context-area">
                             <p>
                                 2001年生まれの現役大学生です。
-                                学校の授業だけでなく独学でプログラミングを学習し、現在は主にウェブ制作を行っています。<br>
-                                正しい道筋を立てて努力をすればできないことはないという信念を基に、日々能力向上を目標に学習し続けています。<br>
+                                学校の授業だけでなく独学でプログラミングを学習し、現在は主にウェブ制作を行っています。<br />
+                                正しい道筋を立てて努力をすればできないことはないという信念を基に、日々能力向上を目標に学習し続けています。<br />
                                 趣味が勉強なんて綺麗ごとだろと言われることもありますが、個人的に勉強はすればするほど沼にはまるほど面白いです。
                                 自分の能力が上がっていく感覚がたまらなく嬉しいので、現状できないことでも勉強してすぐにできるようになる自身があります！
                             </p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="profile-box about-programming">
+                    <h2>プログラミング関係</h2>
+                    <div class="profile-detail">
+                        <div class="skill-chart-area">
+                            <canvas id="skill-chart"></canvas>
+                        </div>
+                        <div class="about-programming-description">
+                            <p data-level="レベル0: ">
+                                未学習。今後学習する予定です。
+                            </p>
+                            <p data-level="レベル1: ">学習中。</p>
+                            <p data-level="レベル2: ">
+                                一通り学習を終え、調べながらであればプログラムを書くことができます。
+                            </p>
+                            <p data-level="レベル3: ">
+                                ある程度であればスラスラとコードを書くことができます。また、調べながらであれば高度な応用も行えます。
+                            </p>
+                            <p data-level="レベル4: ">
+                                素早く作業を行え高いレベルで応用をすることができます。
+                            </p>
+                            <p data-level="レベル5: ">
+                                実際に仕事を行う上でスピードと品質ともに確保したうえで作業が行えます。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="language-description">
+                        <ul class="icon-area">
+                            <li class="Python active">
+                                <img
+                                    src="./img/profile/Python-icon.svg"
+                                    alt="Pythonのアイコン画像"
+                                />
+                                <span>Python</span>
+                            </li>
+                            <li class="HTML･CSS">
+                                <img
+                                    src="./img/profile/HTML-icon.svg"
+                                    alt="HTMLのアイコン画像"
+                                />
+                                <img
+                                    src="./img/profile/CSS-icon.svg"
+                                    alt="CSSのアイコン画像"
+                                />
+                                <span>HTML･CSS</span>
+                            </li>
+                            <li class="JavaScript">
+                                <img
+                                    src="./img/profile/JS-icon.svg"
+                                    alt="JavaScriptのアイコン画像"
+                                />
+                                <span>JavaScript</span>
+                            </li>
+                            <li class="PHP">
+                                <img
+                                    src="./img/profile/PHP-icon.svg"
+                                    alt="PHPのアイコン画像"
+                                />
+                                <span>PHP</span>
+                            </li>
+                        </ul>
+                        <div class="language-detail">
+                            <div class="language-detail-content Python active">
+                                <h1>
+                                    <img
+                                        src="./img/profile/Python-icon.svg"
+                                        alt="Pythonのアイコン画像"
+                                    />
+                                    Python
+                                </h1>
+                                <div class="detail-skill-chart-area">
+                                    <p class="detail-main-context">
+                                        主にWebアプリ制作・デスクトップツール作成・ウェブクローラー制作を行うことができます。過去に作ったものとしては、「学習スケジュール作成アプリ」や「友人間のスケジュール調整を補助するアプリ」、「自作のタイムカードアプリ」などがあり、ほしいものがあれば積極的に自作をしています。バックエンド処理等ぜひお任せください。
+                                    </p>
+                                    <span class="detail-footer">
+                                        <span
+                                            class="detail-footer-design before"
+                                        ></span>
+                                        Django, Flask, Tkinter, Kivy,
+                                        BeautifulSoup, Selenium
+                                        <span
+                                            class="detail-footer-design after"
+                                        ></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="language-detail-content HTML･CSS">
+                                <h1>
+                                    <img
+                                        src="./img/profile/HTML-icon.svg"
+                                        alt="HTMLのアイコン画像"
+                                        class="HTML-icon"
+                                    />
+                                    <img
+                                        src="./img/profile/CSS-icon.svg"
+                                        alt="CSSのアイコン画像"
+                                    />
+                                    HTML･CSS
+                                </h1>
+                                <div class="detail-skill-chart-area">
+                                    <p class="detail-main-context">
+                                        デザインカンプがあるものであれば、正確にコーディングすることができ、簡単なアニメーションを作成することができます。デザインを作成することに関してはまだ勉強中の身ではありますが、コーディングスキルには自身がありレスポンシブ対応も行えます。
+                                    </p>
+                                    <span class="detail-footer">
+                                        <span
+                                            class="detail-footer-design before"
+                                        ></span>
+                                        レスポンシブ対応, 画像や動画の埋め込み
+                                        <span
+                                            class="detail-footer-design after"
+                                        ></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="language-detail-content JavaScript">
+                                <h1>
+                                    <img
+                                        src="./img/profile/JS-icon.svg"
+                                        alt="JavaScriptのアイコン画像"
+                                    />
+                                    JavaScript
+                                </h1>
+                                <div class="detail-skill-chart-area">
+                                    <p class="detail-main-context">
+                                        少し複雑なアニメーションの実装をすることができます。jQueryやNone.jsなどは勉強中でまだ使用できませんが、アニメーションの発火や動的なウェブサイトを作成することができます。
+                                    </p>
+                                    <span class="detail-footer">
+                                        <span
+                                            class="detail-footer-design before"
+                                        ></span>
+                                        アニメーションの実装
+                                        <span
+                                            class="detail-footer-design after"
+                                        ></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="language-detail-content PHP">
+                                <h1>
+                                    <img
+                                        src="./img/profile/PHP-icon.svg"
+                                        alt="PHPのアイコン画像"
+                                    />
+                                    PHP
+                                </h1>
+                                <div class="detail-skill-chart-area">
+                                    <p class="detail-main-context">
+                                        お問い合わせフォームの実装やWordPressのテーマ編集ができます。WordPressについては勉強中ですが、現在WordPressのテーマ編集を行う仕事をしています。
+                                    </p>
+                                    <span class="detail-footer">
+                                        <span
+                                            class="detail-footer-design before"
+                                        ></span>
+                                        お問い合わせフォームの実装,
+                                        WordPress既存テーマの編集
+                                        <span
+                                            class="detail-footer-design after"
+                                        ></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </main>
+        <!-- メインここまで -->
 
-            <div class="profile-box about-programming">
-                <h2>プログラミング関係</h2>
-                <div class="profile-detail">
-                    <div class="skill-chart-area">
-                        <canvas id="skill-chart"></canvas>
-                    </div>
-                    <div class="about-programming-description">
-                        <p data-level="レベル0: ">未学習。今後学習する予定です。</p>
-                        <p data-level="レベル1: ">学習中。</p>
-                        <p data-level="レベル2: ">一通り学習を終え、調べながらであればプログラムを書くことができます。</p>
-                        <p data-level="レベル3: ">ある程度であればスラスラとコードを書くことができます。また、調べながらであれば高度な応用も行えます。</p>
-                        <p data-level="レベル4: ">素早く作業を行え高いレベルで応用をすることができます。</p>
-                        <p data-level="レベル5: ">実際に仕事を行う上でスピードと品質ともに確保したうえで作業が行えます。</p>
-                    </div>
-                </div>
-                <div class="language-description">
-                    <ul class="icon-area">
-                        <li class="Python active">
-                            <img src="./img/profile/Python-icon.svg" alt="Pythonのアイコン画像">
-                            <span>Python</span>
-                        </li>
-                        <li class="HTML･CSS">
-                            <img src="./img/profile/HTML-icon.svg" alt="HTMLのアイコン画像">
-                            <img src="./img/profile/CSS-icon.svg" alt="CSSのアイコン画像">
-                            <span>HTML･CSS</span>
-                        </li>
-                        <li class="JavaScript">
-                            <img src="./img/profile/JS-icon.svg" alt="JavaScriptのアイコン画像">
-                            <span>JavaScript</span>
-                        </li>
-                        <li class="PHP">
-                            <img src="./img/profile/PHP-icon.svg" alt="PHPのアイコン画像">
-                            <span>PHP</span>
-                        </li>
+        <!-- フッターここから -->
+        <footer>
+            <div class="site-menu">
+                <nav>
+                    <ul>
+                        <li><a href="./profile.html">PROFILE</a></li>
+                        <li><a href="./work.html">WORKS</a></li>
                     </ul>
-                    <div class="language-detail">
-                        <div class="language-detail-content Python active">
-                            <h1>
-                                <img src="./img/profile/Python-icon.svg" alt="Pythonのアイコン画像">
-                                Python
-                            </h1>
-                            <div class="detail-skill-chart-area">
-                                <p class="detail-main-context">
-                                    主にWebアプリ制作・デスクトップツール作成・ウェブクローラー制作を行うことができます。過去に作ったものとしては、「学習スケジュール作成アプリ」や「友人間のスケジュール調整を補助するアプリ」、「自作のタイムカードアプリ」などがあり、ほしいものがあれば積極的に自作をしています。バックエンド処理等ぜひお任せください。
-                                </p>
-                                <span class="detail-footer">
-                                    <span class="detail-footer-design before"></span>
-                                    Django, Flask, Tkinter, Kivy, BeautifulSoup, Selenium
-                                    <span class="detail-footer-design after"></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="language-detail-content HTML･CSS">
-                            <h1>
-                                <img src="./img/profile/HTML-icon.svg" alt="HTMLのアイコン画像" class="HTML-icon">
-                                <img src="./img/profile/CSS-icon.svg" alt="CSSのアイコン画像">
-                                HTML･CSS
-                            </h1>
-                            <div class="detail-skill-chart-area">
-                                <p class="detail-main-context">
-                                    デザインカンプがあるものであれば、正確にコーディングすることができ、簡単なアニメーションを作成することができます。デザインを作成することに関してはまだ勉強中の身ではありますが、コーディングスキルには自身がありレスポンシブ対応も行えます。
-                                </p>
-                                <span class="detail-footer">
-                                    <span class="detail-footer-design before"></span>
-                                    レスポンシブ対応, 画像や動画の埋め込み
-                                    <span class="detail-footer-design after"></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="language-detail-content JavaScript">
-                            <h1>
-                                <img src="./img/profile/JS-icon.svg" alt="JavaScriptのアイコン画像">
-                                JavaScript
-                            </h1>
-                            <div class="detail-skill-chart-area">
-                                <p class="detail-main-context">
-                                    少し複雑なアニメーションの実装をすることができます。jQueryやNone.jsなどは勉強中でまだ使用できませんが、アニメーションの発火や動的なウェブサイトを作成することができます。
-                                </p>
-                                <span class="detail-footer">
-                                    <span class="detail-footer-design before"></span>
-                                    アニメーションの実装
-                                    <span class="detail-footer-design after"></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="language-detail-content PHP">
-                            <h1>
-                                <img src="./img/profile/PHP-icon.svg" alt="PHPのアイコン画像">
-                                PHP
-                            </h1>
-                            <div class="detail-skill-chart-area">
-                                <p class="detail-main-context">
-                                    お問い合わせフォームの実装やWordPressのテーマ編集ができます。WordPressについては勉強中ですが、現在WordPressのテーマ編集を行う仕事をしています。
-                                </p>
-                                <span class="detail-footer">
-                                    <span class="detail-footer-design before"></span>
-                                    お問い合わせフォームの実装, WordPress既存テーマの編集
-                                    <span class="detail-footer-design after"></span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </nav>
             </div>
-        </div>
+            <div class="contact-icon">
+                <a href="https://www.instagram.com/kinfo417"
+                    ><img
+                        src="./img/index/instagram-icon.png"
+                        alt="instagramのアイコン画像"
+                /></a>
+                <a href="https://twitter.com/Kinfo417"
+                    ><img
+                        src="./img/index/twitter-icon.png"
+                        alt="twitterのアイコン画像"
+                /></a>
+            </div>
+            <div class="contact-mail">
+                <img
+                    src="./img/index/mail-icon.png"
+                    alt="メールのアイコン画像"
+                />
+                <p>kinformation417@gmail.com</p>
+            </div>
+            <div class="footer-logo">
+                <img
+                    src="./img/common/Kinfo-logo-dark.png"
+                    alt="Kinfoのロゴ画像"
+                />
+            </div>
+            <p class="copyright"><small>&copy;Kinfo</small></p>
+        </footer>
+        <!-- フッターここまで -->
 
-    </main>
-    <!-- メインここまで -->
-
-
-
-
-
-
-    <!-- フッターここから -->
-    <footer>
-        <div class="site-menu">
-            <nav>
-                <ul>
-                    <li><a href="./profile.html">PROFILE</a></li>
-                    <li><a href="./work.html">WORKS</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="contact-icon">
-            <a href="https://www.instagram.com/kinfo417"><img src="./img/index/instagram-icon.png" alt="instagramのアイコン画像"></a>
-            <a href="https://twitter.com/Kinfo417"><img src="./img/index/twitter-icon.png" alt="twitterのアイコン画像"></a>
-        </div>
-        <div class="contact-mail">
-            <img src="./img/index/mail-icon.png" alt="メールのアイコン画像">
-            <p>kinformation417@gmail.com</p>
-        </div>
-        <div class="footer-logo">
-            <img src="./img/common/Kinfo-logo-dark.png" alt="Kinfoのロゴ画像">
-        </div>
-        <p class="copyright"><small>&copy;Kinfo</small></p>
-    </footer>
-    <!-- フッターここまで -->
-
-
-
-
-
-
-    <!-- JS読み込みここから -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script/common.js"></script>
-    <script src="./script/profile.js"></script>
-    <!-- JS読み込みここまで -->
-</body>
+        <!-- JS読み込みここから -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+            integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./script/common.js"></script>
+        <script src="./script/profile.js"></script>
+        <!-- JS読み込みここまで -->
+    </body>
 </html>

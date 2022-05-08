@@ -8,11 +8,6 @@ html {
     font-size: 10px;
 }
 
-
-
-
-
-
 /* ヘッダーここから */
 header {
     z-index: 100;
@@ -92,11 +87,6 @@ img {
 }
 /* ヘッダーここまで */
 
-
-
-
-
-
 /* メインここから */
 main {
     padding-top: 90px;
@@ -124,14 +114,10 @@ main {
     top: 50%;
     right: 20%;
     transform: translateY(-50%);
-    text-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 1px 0 white, -1px 0 0 white, -1px -1px 0 white, 0 -1px 0 white, 1px -1px 0 white;
+    text-shadow: 1px 0 0 white, 1px 1px 0 white, 0 1px 0 white, -1px 1px 0 white,
+        -1px 0 0 white, -1px -1px 0 white, 0 -1px 0 white, 1px -1px 0 white;
 }
 /* メインここまで */
-
-
-
-
-
 
 /* フッターここから */
 footer {
@@ -177,14 +163,8 @@ footer .site-menu li::after {
 }
 /* フッターここまで */
 
-
-
-
-
-
 /* レスポンシブここから */
 @media (max-width: 800px) {
-
     header {
         height: 50px;
     }
@@ -225,7 +205,7 @@ footer .site-menu li::after {
         width: 80%;
         height: 2px;
         border-radius: 20%;
-        background:white;
+        background: white;
         transform-origin: 0 50%;
         transition: all 0.2s ease-in-out;
     }

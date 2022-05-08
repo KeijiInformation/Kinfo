@@ -11,16 +11,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
 }
 /* ファーストビューここまで */
-
-
-
-
-
 
 /* プロフィール全体ここから */
 .profile-contents {
@@ -62,11 +57,6 @@
 }
 /* プロフィール全体ここまで */
 
-
-
-
-
-
 /* 基本情報ここから */
 .profile-box:not(.about-programming) > h2::after {
     background-color: white;
@@ -85,7 +75,7 @@
     display: flex;
     align-items: center;
     height: calc(100% - 70px);
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.4rem;
 }
 
@@ -124,11 +114,6 @@
 }
 /* 基本情報ここまで */
 
-
-
-
-
-
 /* プログラミング関係ここから */
 .about-programming .profile-detail {
     display: flex;
@@ -164,7 +149,7 @@
     content: attr(data-level);
     position: absolute;
     top: 0;
-    transform:  translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px));
     display: block;
     font-weight: bold;
     font-size: 1.3rem;
@@ -188,7 +173,7 @@
 .icon-area li {
     position: relative;
     background-color: white;
-    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
     user-select: none;
 }
@@ -217,7 +202,7 @@
     top: 5px;
 }
 
-.icon-area .HTML･CSS img{
+.icon-area .HTML･CSS img {
     position: absolute;
     top: 5px;
     left: 2px;
@@ -276,7 +261,7 @@
     position: relative;
     display: inline-block;
     width: auto;
-    font-size: 3.0rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -316,7 +301,7 @@
 }
 
 .detail-footer::before {
-    content: '主なスキル';
+    content: "主なスキル";
     display: block;
     top: 0;
     left: 0;
@@ -328,7 +313,7 @@
     position: absolute;
     width: 0;
     height: 0;
-    transition: all 0.5s 0.5s ease-in-out ;
+    transition: all 0.5s 0.5s ease-in-out;
 }
 
 .detail-footer-design.before {
@@ -351,18 +336,8 @@
 }
 /* プログラミング関係ここまで */
 
-
-
-
-
-
 /* その他ここから */
 /* その他ここまで */
-
-
-
-
-
 
 /* レスポンシブここから(-800) */
 @media (max-width: 800px) {
@@ -412,7 +387,7 @@
         height: 30px;
     }
 
-    .icon-area .HTML･CSS img{
+    .icon-area .HTML･CSS img {
         width: 30px;
         height: 30px;
     }
@@ -434,7 +409,7 @@
     }
 
     .language-detail-content h1 {
-        font-size: 2.0rem;
+        font-size: 2rem;
     }
 }
 /* レスポンシブここまで(-800) */

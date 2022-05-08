@@ -53,15 +53,11 @@
     visibility: hidden;
 }
 
-.catch-copy-animation h1 > span.appear, .typing-line.appear {
+.catch-copy-animation h1 > span.appear,
+.typing-line.appear {
     visibility: visible;
 }
 /* loadingアニメーションここまで */
-
-
-
-
-
 
 /* ファーストビューここから */
 .first-view {
@@ -92,23 +88,26 @@
 }
 /* ファーストビューここまで */
 
-
-
-
-
-
 /* 各セクションここから */
 body {
     background-color: black;
 }
 
 .main-section-cover {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,14,255,0.16290266106442575) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 14, 255, 0.16290266106442575) 100%
+    );
 }
 
 .main-section-cover.reverse {
-    background: linear-gradient(90deg, rgba(0,14,255,0.16290266106442575) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 14, 255, 0.16290266106442575) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
 }
 
 .main-section {
@@ -190,7 +189,6 @@ body {
     transform: none;
 }
 
-
 .img-area {
     width: 50%;
 }
@@ -271,7 +269,7 @@ body {
 }
 
 .works-list li:hover > .img-area::after {
-    background-color: rgba(0,0,0,0.55);
+    background-color: rgba(0, 0, 0, 0.55);
 }
 
 .works-list .text-area {
@@ -353,17 +351,17 @@ body {
     font-weight: bold;
     position: absolute;
     padding: 5px 30px;
-    border: 3px solid #3EB863;
-    color: #3EB863;
+    border: 3px solid #3eb863;
+    color: #3eb863;
     border-radius: 40px;
     clip-path: inset(0);
     transition: all 0.5s ease-in-out;
 }
 
 .more-button-area a:nth-child(2) {
-    border: 3px solid #3EB863;
+    border: 3px solid #3eb863;
     color: white;
-    background-color: #3EB863;
+    background-color: #3eb863;
     clip-path: inset(0 100% 0 0);
 }
 
@@ -376,14 +374,8 @@ body {
 }
 /* 各セクションここまで */
 
-
-
-
-
-
 /* レスポンシブここから */
 @media (max-width: 800px) {
-
     /* ファーストビューここから */
     .first-view-text h1 {
         font-size: 23px;
@@ -447,10 +439,11 @@ body {
     }
 
     .works-list .img-area::after {
-        background-color: rgba(0,0,0,0.55);
+        background-color: rgba(0, 0, 0, 0.55);
     }
 
-    .works-list .text-area dl, .works-list .short-description {
+    .works-list .text-area dl,
+    .works-list .short-description {
         transform: none;
         opacity: 1;
     }
@@ -467,6 +460,5 @@ body {
         font-size: 1rem;
     }
     /* 各セクションここまで */
-
 }
 /* レスポンシブここまで */

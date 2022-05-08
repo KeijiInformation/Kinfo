@@ -14,332 +14,314 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
 }
 /* ファーストビューここまで */
 
-
-
-
-
-
 /* Works-contents-area全体ここから */
-    .works-contents-area {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+.works-contents-area {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    .works-contents-area ul {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-    }
+.works-contents-area ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
 /* Works-contents-area全体ここから */
-
-
-
-
-
 
 /* work-itemここから */
-    .work-item {
-        width: 300px;
-        height: 350px;
-        /* background-color: #C4C4C4; */
-        padding: 7.2% 3.1% 4.8% 3.1%;
-        text-align: center;
-        font-size: 0.67rem;
-    }
+.work-item {
+    width: 300px;
+    height: 350px;
+    /* background-color: #C4C4C4; */
+    padding: 7.2% 3.1% 4.8% 3.1%;
+    text-align: center;
+    font-size: 0.67rem;
+}
 
-    .sub-title {
-        font-size: 2.5em;
-        color: rgba(0,0,0,0.55);
-    }
+.sub-title {
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.55);
+}
 
-    .title {
-        font-size: 4em;
-        font-weight: bold;
-    }
+.title {
+    font-size: 4em;
+    font-weight: bold;
+}
 
-    .work-item img {
-        margin-top: 4.8%;
-    }
+.work-item img {
+    margin-top: 4.8%;
+}
 
-    .button-area {
-        position: relative;
-        margin: 3.5% auto;
-        width: 40%;
-        height: 10%;
-        margin-top: 3.5%;
-        font-weight: bold;
-        font-size: 2.7em;
-        font-family: sans-serif;
-        border-radius: 20px;
-        user-select: none;
-    }
+.button-area {
+    position: relative;
+    margin: 3.5% auto;
+    width: 40%;
+    height: 10%;
+    margin-top: 3.5%;
+    font-weight: bold;
+    font-size: 2.7em;
+    font-family: sans-serif;
+    border-radius: 20px;
+    user-select: none;
+}
 
-    .button-area div {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 120%;
-        height: 120%;
-        border-radius: 20px;
-        transition: all 0.3s ease-in-out;
-    }
+.button-area div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
 
-    .button-area span {
-        display: block;
-        font-size: 0.8em;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.button-area span {
+    display: block;
+    font-size: 0.8em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    .button-area .button-active span {
-        top: calc(0.7 * (100% + 3px));
-    }
+.button-area .button-active span {
+    top: calc(0.7 * (100% + 3px));
+}
 
-    .button-area .button-inactive {
-        background-color: white;
-        color: #3EB863;
-        border: 3px solid #3EB863;
-        clip-path: inset(0);
-    }
+.button-area .button-inactive {
+    background-color: white;
+    color: #3eb863;
+    border: 3px solid #3eb863;
+    clip-path: inset(0);
+}
 
-    .button-area .button-active {
-        background-color: #3EB863;
-        color: white;
-        clip-path: inset(0 100% 0 0 );
-    }
+.button-area .button-active {
+    background-color: #3eb863;
+    color: white;
+    clip-path: inset(0 100% 0 0);
+}
 
-    .button-area:hover {
-        cursor: pointer;
-    }
+.button-area:hover {
+    cursor: pointer;
+}
 
-    .button-area:hover .button-inactive {
-        clip-path: inset(0 0 0 100%);
-    }
+.button-area:hover .button-inactive {
+    clip-path: inset(0 0 0 100%);
+}
 
-    .button-area:hover .button-active {
-        clip-path: inset(0);
-    }
+.button-area:hover .button-active {
+    clip-path: inset(0);
+}
 /* work-itemここまで */
 
-
-
-
-
-
 /* ポップアップここから */
-    .bg-cover-box {
-        z-index: 200;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgba(0,0,0,0.9);
-        width: 100%;
-        height: 100vh;
-        visibility: hidden;
-        transition: all 0.3s ease-in-out;
-        opacity: 0;
-    }
+.bg-cover-box {
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
 
-    .work-more-area {
-        z-index: 500;
-        position: fixed;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-        width: 80vw;
-        height: 100vh;
-        visibility: hidden;
-        transition: all 0.3s ease-in-out;
-        opacity: 0;
-    }
+.work-more-area {
+    z-index: 500;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 80vw;
+    height: 100vh;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
 
-    .work-more-contents {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(210,210,210);
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-    }
+.work-more-contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(210, 210, 210);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
 
-    .work-more-area.open, .bg-cover-box.open, .work-more-contents.open, .close-button.open {
-        opacity: 1;
-        visibility: visible;
-        z-index: 100;
-    }
+.work-more-area.open,
+.bg-cover-box.open,
+.work-more-contents.open,
+.close-button.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+}
 
-    .close-button {
-        z-index: 300;
-        position: fixed;
-        top: 5px;
-        right: 5px;
-        width: 30px;
-        height: 30px;
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-    }
+.close-button {
+    z-index: 300;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
 
-    .close-button:hover {
-        cursor: pointer;
-    }
+.close-button:hover {
+    cursor: pointer;
+}
 
-    .close-button span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 42.4px;
-        height: 1px;
-        background-color: white;
-    }
+.close-button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42.4px;
+    height: 1px;
+    background-color: white;
+}
 
-    .close-button span:first-child {
-        transform-origin: center left;
-        transform: rotate(45deg);
-    }
+.close-button span:first-child {
+    transform-origin: center left;
+    transform: rotate(45deg);
+}
 
-    .close-button span:last-child {
-        transform-origin: center right;
-        left: -12.4px;
-        transform: rotate(-45deg);
-    }
+.close-button span:last-child {
+    transform-origin: center right;
+    left: -12.4px;
+    transform: rotate(-45deg);
+}
 /* ポップアップここまで */
 
-
-
-
-
-
 /* ポップアップ中身ここから */
-    .work-more-contents .head-box {
-        position: relative;
-        left: 0;
-        top: 0;
-        height: 45%;
-        background: rgb(0,117,95);
-        background: linear-gradient(90deg, rgba(0,117,95,0.8) 0%, rgba(0,117,95,0.5) 100%);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 50px;
-        clip-path: inset(0 100% 0 0);
-        transition: all 1s 0.1s ease-in-out;
-    }
+.work-more-contents .head-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 45%;
+    background: rgb(0, 117, 95);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 117, 95, 0.8) 0%,
+        rgba(0, 117, 95, 0.5) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    clip-path: inset(0 100% 0 0);
+    transition: all 1s 0.1s ease-in-out;
+}
 
-    .work-more-contents.open > .head-box {
-        clip-path: inset(0);
-    }
+.work-more-contents.open > .head-box {
+    clip-path: inset(0);
+}
 
-    .work-more-contents .head-box .head-image {
-        position: absolute;
-        transform: translateX(10%) scale(0.7);
-        opacity: 0.8;
-    }
+.work-more-contents .head-box .head-image {
+    position: absolute;
+    transform: translateX(10%) scale(0.7);
+    opacity: 0.8;
+}
 
-    .work-more-contents .head-box .text-area {
-        color: rgb(210,210,210);
-        text-shadow: 1px 1px 0 black;
-    }
+.work-more-contents .head-box .text-area {
+    color: rgb(210, 210, 210);
+    text-shadow: 1px 1px 0 black;
+}
 
-    .work-more-contents .head-box p {
-        font-size: 1rem;
-    }
+.work-more-contents .head-box p {
+    font-size: 1rem;
+}
 
-    .work-more-contents .head-box h1 {
-        position: relative;
-        font-size: 3.5rem;
-        font-weight: bold;
-    }
+.work-more-contents .head-box h1 {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
 
-    .work-more-contents .head-box h1::after {
-        content: "";
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 110%;
-        height: 2px;
-        border-radius: 30%;
-        background-color: rgb(210,210,210);
-        clip-path: inset(0 100%);
-        transition: all 2s 0.4s ease-in-out;
-    }
+.work-more-contents .head-box h1::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 2px;
+    border-radius: 30%;
+    background-color: rgb(210, 210, 210);
+    clip-path: inset(0 100%);
+    transition: all 2s 0.4s ease-in-out;
+}
 
-    .work-more-contents.open .head-box h1::after {
-        clip-path: inset(0);
-    }
+.work-more-contents.open .head-box h1::after {
+    clip-path: inset(0);
+}
 
-    .work-more-contents .text-box {
-        display: flex;
-        position: relative;
-        gap: 5%;
-        color: rgba(0,0,0,0.55);
-        padding: 20px;
-        overflow: auto;
-    }
+.work-more-contents .text-box {
+    display: flex;
+    position: relative;
+    gap: 5%;
+    color: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    overflow: auto;
+}
 
-    .work-more-contents .text-box > div {
-        width: 45%;
-    }
+.work-more-contents .text-box > div {
+    width: 45%;
+}
 
-    .work-more-contents .text-box ul {
-        display: flex;
-        flex-direction: column;
-    }
+.work-more-contents .text-box ul {
+    display: flex;
+    flex-direction: column;
+}
 
-    .work-more-contents .text-box h1 {
-        position: relative;
-        font-size: 1.5rem;
-        display: inline-block;
-    }
+.work-more-contents .text-box h1 {
+    position: relative;
+    font-size: 1.5rem;
+    display: inline-block;
+}
 
-    .work-more-contents .text-box h1::after {
-        content: "";
-        position: absolute;
-        top: 90%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 110%;
-        height: 2px;
-        border-radius: 25%;
-        background-color: rgba(0,0,0,0.55);
-    }
+.work-more-contents .text-box h1::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 2px;
+    border-radius: 25%;
+    background-color: rgba(0, 0, 0, 0.55);
+}
 
-    .work-more-contents .text-box p {
-        padding-top: 5px;
-        padding-left: 10px;
-        font-size: 1.3rem;
-    }
+.work-more-contents .text-box p {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
 
-    .work-more-contents .grid-area {
-        padding-top: 5px;
-        padding-left: 10px;
-        display: grid;
-        grid-template-columns: repeat(2, 144px);
-        font-size: 1.3rem;
-    }
+.work-more-contents .grid-area {
+    padding-top: 5px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 144px);
+    font-size: 1.3rem;
+}
 /* ポップアップ中身ここまで */
-
-
-
-
-
 
 /* レスポンシブここから */
 @media (max-width: 800px) {
@@ -365,7 +347,7 @@
         z-index: 200;
         top: 0px;
         right: 0px;
-        background-color: rgba(0,117,95,0.3);
+        background-color: rgba(0, 117, 95, 0.3);
     }
 
     .work-more-contents .head-box {
