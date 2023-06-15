@@ -39,7 +39,10 @@ header {
 }
 
 .header-logo-box {
-    width: 125px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
     display: block;
 }
 
@@ -159,7 +162,10 @@ footer .site-menu li::after {
 
 .footer-logo {
     margin: 30px 0;
-    width: 130px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 /* フッターここまで */
 

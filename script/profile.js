@@ -47,11 +47,11 @@ function makeChartOption(title) {
 let langChart = new Chart(skillChart, {
     type: "radar",
     data: {
-        labels: ["Python", "HTML･CSS", "JavaScript", "PHP"],
+        labels: ["Python", "HTML･CSS", "JavaScript", "TypeScript"],
         datasets: [
             {
                 label: "言語",
-                data: [4, 3, 1, 1],
+                data: [3, 4, 4, 3],
                 backgroundColor: "rgba(97,255,125,0.3)",
                 borderColor: "rgba(0,0,0,0.5)",
                 borderWidth: 1,
